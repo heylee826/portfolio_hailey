@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <!-- lightBox.css -->
-  <link href="./css/simple-lightbox.min.css" rel="stylesheet" />
+  <!-- <link href="./css/simple-lightbox.min.css" rel="stylesheet" /> -->
 
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/circle-progress.css">
@@ -30,14 +30,14 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- lightBox.js -->
-  <script src="./js/simple-lightbox.min.js"></script>
+  <!-- <script src="./js/simple-lightbox.min.js"></script> -->
 
 
 
   <script defer src="./js/pagesoft.js"></script>
   <script defer src="./js/main.js"></script>
   <script defer src="./js/circle-progress.js"></script>
-  <script src="./js/light_box.js"></script>
+  <script defer src="./js/light_box.js"></script>
     
 
 </head>
@@ -281,36 +281,21 @@
         <p><img src="./img/Project03_low.gif" alt="모바일 앱 디자인 글자"></p>
         <p><img src="./img/Project_low.gif" alt="프로젝트 글자"></p>
       </div>
-      <div class="gallery"> 
-
-        <a href="./img/gallery/01.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/01_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/02.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/02_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/03.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/03_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/04.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/04_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/05.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/05_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/06.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/06_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/07.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/07_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/08.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/08_low.jpg" alt="" title="Image 1" width=200>
-        </a>
-        <a href="./img/gallery/09.jpg" class="big" rel="rel1">
-          <img src="./img/gallery/09_low.jpg" alt="" title="Image 1" width=200>
-        </a>
+      <div class="gallery-container"> 
+        <ul class="gallery">
+          <li><a href="javascript:void(0)"><img src="./img/gallery/01_low.jpg" data-lightbox="./img/gallery/01.jpg" alt="gallery image 01"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/02_low.jpg" data-lightbox="./img/gallery/02.jpg" alt="gallery image 02"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/03_low.jpg" data-lightbox="./img/gallery/03.jpg" alt="gallery image 03"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/04_low.jpg" data-lightbox="./img/gallery/04.jpg" alt="gallery image 04"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/05_low.jpg" data-lightbox="./img/gallery/05.jpg" alt="gallery image 05"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/06_low.jpg" data-lightbox="./img/gallery/06.jpg" alt="gallery image 06"></a></li>
+          <li><a href="javascript:void(0)"><img src="./img/gallery/07_low.jpg" data-lightbox="./img/gallery/07.jpg" alt="gallery image 07"></a></li>
+        </ul>
         
+      </div>
+
+      <div id="lightbox-overlay">
+        <p><img src="" alt="Lightbox image" title="Click anywhere to close" id="lightbox-image" /></p>
       </div>
     </section>
 
