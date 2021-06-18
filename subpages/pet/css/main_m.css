@@ -1,0 +1,664 @@
+#wrap{width:100%;}
+#header{
+    height: 110px;
+    width: 100%;
+}
+
+
+
+
+#header .header_top{
+    height: 65px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+}
+#header .header_top .logo a{
+    display: block;
+    background: url(../img/logo.png) no-repeat 0 0 ;
+    background-position: 0 -53px;
+    height: 98px; width: 93px;
+    margin-top: 12px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+}
+
+#header .header_top .top_right{
+    height: 65px;
+    position: absolute;
+    right: 0px;
+}
+#header .header_top .top_right ul:last-child{margin-right: 30px;}
+#header .header_top .top_right ul{
+    float: left;
+    margin-right: 20px;
+}
+#header .header_top .top_right .util{
+    height: 65px;
+    width: 183px;
+    margin-top: 26px;
+    display: none;
+} /* 유틸 각각 모양 다 만들어두고, 통째로 플로트레프트 해보자~!*/
+#header .header_top .top_right .util li{float: left; margin-left: 14px;}
+#header .header_top .top_right .util li:first-child{margin-left: 0px;}
+#header .header_top .top_right .util li a{color: #000; font-size: 13px;}
+
+#header .header_top .top_right .search{
+    width: 156px; height: 65px;
+    margin-top: 17px;
+    display: none;
+}
+#header .header_top .top_right .search li input{
+    outline: none;
+    background:transparent;
+    border-radius: 15px;
+    width: 156px; height: 30px;
+    border:1px solid #999;
+    display: none;
+}
+#header .header_top .top_right .search li input::placeholder{color: #fff; padding-left: 10px;}
+#header .header_top .top_right .search li:nth-child(2){
+    position: absolute;
+    left: 60px;
+}
+#header .header_top .top_right .search li a{
+    display: block;
+    background: url(../img/headr_search.png) no-repeat 0 -46px / 25px auto;
+    width: 30px; height: 30px;
+    font-size: 0;
+}
+
+#header .header_top .top_right .icon{
+    height: 65px; width: 84px; 
+    margin-top: 17px;
+}
+#header .header_top .top_right .icon li{float: left; margin-left:18px;}
+#header .header_top .top_right .icon li:first-child{margin-left:0px;}
+#header .header_top .top_right .icon li:first-child a{
+    display: block;
+    width: 33px; height: 39px;
+    background:url(../img/header_mypage.png)no-repeat;
+    background-size: 33px;
+    background-position: 0 -43px;
+    font-size: 0;
+}
+#header .header_top .top_right .icon li:last-child a{
+    display: block;
+    width: 33px; height:39px;
+    background:url(../img/header_cart.png)no-repeat;
+    background-size: 31px;
+    background-position: 0 -46px;
+    font-size: 0;
+}
+#header .header_top .menu_btn{
+    width: 37px; height: 65px;
+    position: absolute;
+    left: 30px;
+}
+#header .header_top .menu_btn a{
+    display: block;
+    background: url(../img/header_menu.png) no-repeat;
+    background-position: 0 -40px;
+    width: 37px; height: 29px;
+    font-size: 0;
+    margin-top: 18px;
+}
+#header .header_top .sr_icon{
+    display: block;
+    background: url(../img/headr_search.png) no-repeat 0 -46px / 25px auto;
+    width: 25px; height: 25px;
+    font-size: 0;
+    position: absolute;
+    left: 90px;
+    margin-top: 18px;
+}
+
+/*#header:hover .header_top{background-color:#fff;}
+#header:hover .header_top .logo a{background-position: 0 -56px;}
+#header:hover .header_top .top_right .util li a{color: #000; text-decoration: underline;}
+#header:hover .header_top .top_right .search li a{background-position: 0 -40px;}
+#header:hover .header_top .top_right .search li input{border-color: #000;}
+#header:hover .header_top .top_right .icon li:first-child a{background-position: 0 -40px;}
+#header:hover .header_top .top_right .icon li:last-child a{background-position: 0 -40px;}
+#header:hover .header_top .menu_btn a{background-position: 0 -40px;}
+#header:hover .header_bottom{background-color: #000;}
+#header:hover .header_top .top_right .search li input::placeholder{color: #777;}*/
+
+
+
+
+
+
+
+#header .header_bottom{
+    width: 100%; height: 45px;
+    position: relative;
+    z-index: 200;
+    background-color: #000;
+}/*바텀만 메인슬라이드 넣으니 안나와서 여쭤보니, 탑이랑, 바틈에 z-index줘보자고! 그리고z-index는 포지션을 줘야 먹힌대, 그래서 필요없지만 포지션 렐러티브 줬음 와 신기해!!*/
+#header .header_bottom .gnb{
+    width: 498px;
+    margin: 0px auto;
+}/*계속 틀어지고 난리했던게, 위드값이 뭔가 안맞았나 그래서! 그래서 각각에게 가로값을 주고, 그거 다 더하고, 더하기 마진레프트 준거 다 더해서 
+
+(26+44+95+33 + (마진값3개190*3)=768px)
+얘의 정확한 위드값을 주고 마진영오토를 주니 가운데 왔고, 페이지를 줄여도 딩딩떠다니지 않게 되었다~! 100%에서 포지션을 주고 해버리면 화면 크기 움직일때마다 떠버린대 왜냐면 화면 사이즈를 무조건 100%로 잡고 포지션을 준거기때문에*/
+#header .header_bottom .gnb li{
+    float: left; margin-left: 100px; margin-top: 16px;
+}
+#header .header_bottom .gnb li:nth-child(1){width:26px;}
+#header .header_bottom .gnb li:nth-child(2){width:44px;}
+#header .header_bottom .gnb li:nth-child(3){width:95px;}
+#header .header_bottom .gnb li:nth-child(4){width:33px;}
+#header .header_bottom .gnb li:first-child {margin-left: 0;}
+/*#header .header_bottom .gnb li a{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+}
+#header .header_bottom .gnb li:hover a{
+    text-decoration: underline;
+}
+#header .header_bottom .gnb li img{display: none;}*//* gnb폰트 이뻐서 이미지할랬는데 넘 희끄므리하고 어더라인 하버효과도 못줬서 걍 구린 저걸로 바꿈 ㅠㅠ., */
+
+
+
+
+
+
+/* 헤더 끝 신난당^^ */
+
+#mainSlider{
+    width: 100%; height: auto;
+    min-width: 640px;
+    background: url(../img/mainVisual_01_m_bg.png)no-repeat center center/ cover;
+    margin: 0 auto;
+}
+
+#mainSlider .sliderin{
+    width: 640px; height: 788px;
+    margin: 0 auto;
+    position: relative;    
+}
+#mainSlider .sliderin .main_txt{
+    position: absolute;
+    bottom: 170px;left: 0;
+}
+#mainSlider .sliderin .main_txt p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 1.4
+}
+#mainSlider .sliderin .btn{
+    width: 234px; height: 48px;
+    border: 1px solid #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%; bottom:310px;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    display: none;
+}
+#mainSlider .sliderin .btn a{
+    display: block;
+    width: 234px; height: 48px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0;
+}
+#mainSlider .sliderin .btnL{
+    display: block;
+    width: 25px; height: 51px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+#mainSlider .sliderin .btnR{
+    display: block;
+    width: 25px; height: 51px;
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+#mainSlider .sliderin .pager{
+    position: absolute;
+    bottom: 15px; left: 50%;
+    transform: translateX(-50%);
+}
+#mainSlider .sliderin .pager li{float: left; margin-left: 10px;}
+#mainSlider .sliderin .pager li a{
+    display: block;
+    width: 35px; height: 3px;
+    background-color: #444;
+    font-size: 0;
+}
+#mainSlider .sliderin .pager li.on a{
+    display: block;
+    width: 54px; height: 3px;
+    background-color: #fff;
+}
+
+/*#mainSlider .sliderin .btn:hover{border: 0; background-color: #000;}
+#mainSlider:hover .sliderin .btnL{opacity: 1;}
+#mainSlider:hover .sliderin .btnR{opacity: 1;}*/
+
+
+/* 메인슬라이더 끝 */
+
+
+
+
+
+#container{
+    width: 100%;
+}
+
+
+
+
+
+
+/* cont1시작 - 상품목록 */
+
+#container .cont1{
+    width: 640px;
+    margin: 0 auto;
+}
+#container .cont1 .cont1_in{
+    width: 640px;
+    margin: 40px 15px; 
+}
+
+
+/*
+#container .cont1 .cont1_in .prodImg_1{
+    width: 640px; height: 580px;
+}
+#container .cont1 .cont1_in .prodImg_1 li{
+    float: left; 
+    margin-left: 10px; 
+    text-align: center;
+    width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#container .cont1 .cont1_in .prodImg_1 li img{width: 300px;}
+#container .cont1 .cont1_in .prodImg_1 li{width: 300px; float: left; margin-right: 10px;}
+#container .cont1 .cont1_in .prodImg_1 li:nth-child(odd){margin-right: 0;}
+#container .cont1 .cont1_in .prodImg_1 li:nth-child(1){float: left; margin-right: 10px;}
+#container .cont1 .cont1_in .prodImg_1 li:nth-child(2){float: right;}
+#container .cont1 .cont1_in .prodImg_1 li:nth-child(3){float: left; margin-right: 10px;}
+#container .cont1 .cont1_in .prodImg_1 li:nth-child(4){float: right;}
+#container .cont1 .cont1_in .prodImg_1 li:first-child;{margin-left: 0px; }
+
+
+#container .cont1 .cont1_in .prodImg_1 .p1 dl{font-size: 18px;font-weight: bold;}
+#container .cont1 .cont1_in .prodImg_1 .p1 dl dd span{font-size: 16px; color: #666}
+#container .cont1 .cont1_in .prodImg_1 .txt dl{margin-top: 20px;}
+#container .cont1 .cont1_in .prodImg_1 .box .sold_out{
+    width: 70px; height: 17px;
+    background-color: #da5858;
+    color: #fff;
+    font-size: 10px;
+    margin: 10px 0 3px 153px;
+}
+*/
+
+.prodImg_1{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+.prodImg_1 .p1{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}
+
+.prodImg_1 .p1 img{
+    width:300px; height:auto;
+    margin-bottom: 15px;
+} 
+.prodImg_1 .p1 .text{
+    text-align: center;
+}
+.prodImg_1 .p1 .text p{
+    font-size: 18px; font-weight: bold;
+    line-height: 1.5;
+}
+.prodImg_1 .p1 .text p span{
+    color: #555;
+}
+.prodImg_1 .p1 .text p:first-child{}
+.prodImg_1 .p1 .text p:last-child{
+    margin-bottom: 15px;
+}
+.prodImg_1 .p1 .sold_out{
+    width: 70px; height: 17px;
+    background-color: #da5858;
+    color: #fff;
+    font-size: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.prodImg_1 .p1 .color{
+    margin-bottom: 5px;
+}
+.prodImg_1 .p1 .color li{
+    width: 25px; height: 5px;
+    float: left; 
+    margin-right: 9px;
+    font-size: 0;
+    background-color: #000;
+}
+.prodImg_1 .p1 .colorchip1 li:nth-child(1){background-color: #c7b48e;}
+.prodImg_1 .p1 .colorchip2 li:nth-child(1){background-color: #fe9ee2;}
+.prodImg_1 .p1 .colorchip2 li:nth-child(2){background-color: #c7b48e;}
+.prodImg_1 .p1 .colorchip2 li:nth-child(3){background-color: #c7f3e7;} 
+.prodImg_1 .p1 .colorchip2 li:nth-child(4){background-color: #3e3ebc ;}
+.prodImg_1 .p1 .colorchip3 li:nth-child(1){background-color: #c7b48e;}
+.prodImg_1 .p1 .colorchip3 li:nth-child(2){background-color: #bababa ;}
+.prodImg_1 .p1 .colorchip3 li:nth-child(3){background-color: #3e3ebc;}
+.prodImg_1 .p1 .colorchip5 li:nth-child(1){background-color: #d0b2a9;}
+.prodImg_1 .p1 .colorchip5 li:nth-child(2){background-color: #6196c4;}
+.prodImg_1 .p1 .colorchip5 li:nth-child(3){background-color: #494d53;}
+.prodImg_1 .p1 .colorchip6 li:nth-child(1){background-color: #9d9ac8;}
+.prodImg_1 .p1 .colorchip6 li:nth-child(2){background-color: #da8270 ;}
+.prodImg_1 .p1 .colorchip6 li:nth-child(3){background-color: #c7b48e;}
+ 
+
+
+
+
+
+/*
+#container .cont1 .cont1_in li{width: 375px; height: 580px; overflow: hidden; }
+#container .cont1 .cont1_in li img{transition: all 0.5s;}
+#container .cont1 .cont1_in li:hover img{transform: scale(1.1);}
+*/
+
+/* banner시작 - 배너 */
+
+#container .banner{
+    width: 100%; height: 300px;
+    background: url(../img/banner01.jpg) no-repeat center center / cover;
+    position: relative;
+    background-attachment: fixed;
+    min-width: 640px;
+}
+#container .banner .txt{
+    position: absolute;
+    top: 68px; left: 50%;
+    transform: translateX(-50%);
+}
+#container .banner .txt .tit{text-align: center; margin-bottom: 20px; width:500px;}
+#container .banner .txt .tit img{width: 450px;}
+#container .banner .txt p span{}
+#container .banner .txt p{
+    color: #fff;
+    font-size: 18px; 
+    font-weight: bold;
+    text-align: center;
+    
+}
+#container .banner .bn_btn{display: none;
+}
+#container .banner .bn_btn p{
+    width: 172px; height: 48px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 50%; bottom: 60px;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+#container .banner .bn_btn p a{
+    display: block;
+    width: 172px; height: 48px;
+    color: #fff; 
+    font-size: 18px; 
+    margin-top: 15px;
+    text-align: center;
+}
+
+#container .banner .bn_btn:hover p{background-color: #000; border: 0; }
+
+/* cont2시작 - 리뷰 */
+
+#container .cont2{
+    width: 640px; height: auto; margin: 0 auto;}
+#container .cont2 .cont2_in{
+    width: 640px;
+    margin: 60px auto;
+    position: relative;
+}
+#container .cont2 .cont2_in .cont2_tit{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+#container .cont2 .cont2_in .img_1{
+    width:610px; margin:0 auto;
+}
+#container .cont2 .cont2_in .img_1 li{
+    /*float:left;*/
+    width:298px; height: 420px;
+    margin-bottom: 14px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    z-index: 300;
+} 
+#container .cont2 .cont2_in .img_1 li:nth-child(1){float: left; margin-right:14px;}
+#container .cont2 .cont2_in .img_1 li:nth-child(2){float: right;}
+#container .cont2 .cont2_in .img_1 li:nth-child(3){float: left; margin-right:14px;}
+#container .cont2 .cont2_in .img_1 li:nth-child(4){float: right;}
+#container .cont2 .cont2_in .img_1 li img{width: 296px; height: 298px;}
+#container .cont2 .cont2_in .img_1 li:last-child{ 
+    margin-right:0;
+}
+
+
+#container .cont2 .cont2_in .img_1 li a .cover .bg{
+    width: 275px; height: 275px;
+    background-color: rgba(0,0,0,0.5); 
+    position: absolute;
+    top: 113px;
+    opacity: 0;
+    transition: all 0.5s;
+    display: none;
+}
+#container .cont2 .cont2_in .img_1 li a .cover .txt{
+    width: 298px; 
+    color: #000;
+    transition: all 0.5s;
+    
+}
+#container .cont2 .cont2_in .img_1 li a .cover .txt p:nth-child(1){
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+#container .cont2 .cont2_in .img_1 li a .cover .txt p:nth-child(2){
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#container .cont2 .cont2_in .img_1 li a .cover .txt p:nth-child(3){
+    font-size: 12px;
+    padding-top: 9px;
+    border-top: 1px dotted #000;
+    width: 275px;
+    margin: 0 auto;
+}
+#container .cont2 .cont2_in .img_1 li a .cover .txt p{text-align: center;}
+
+
+
+
+
+#container .cont2 .cont2_in .img_2{
+    width:1160px; margin:0 auto; display: none;
+}
+#container .cont2 .cont2_in .img_2 li{
+    float:left;
+    width:275px; margin-right:20px;
+}
+#container .cont2 .cont2_in .img_2 li:last-child{
+    margin-right:0;
+}
+
+
+#container .cont2 .cont2_in .img_2 li a .cover .bg{
+    width: 275px; height: 275px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 408px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt{
+    width: 275px; height: 275px;
+    color: #fff;
+    position: absolute;
+    top: 475px;
+    display: none;
+    transition: all 0.5s;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt p:nth-child(1){
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt p:nth-child(2){
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt p:nth-child(3){
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt p:nth-child(4){
+    font-size: 12px;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+}
+#container .cont2 .cont2_in .img_2 li a .cover .txt p{text-align: center;}
+
+
+/*#container .cont2 .cont2_in li:hover a .cover .bg{opacity: 1}
+#container .cont2 .cont2_in li:hover a .cover .txt{display: block;}*/
+
+
+/* cont3시작 - youtube */
+
+
+#container .cont3{
+    width: 100%; height: auto;
+    background: url(../img/cont3_bg.jpg) no-repeat center center / cover;
+}
+#container .cont3 .cont3_in{
+    width: 640px;
+    padding-top: 55px;
+    margin:  auto;
+}
+#container .cont3 .cont3_in .cont3_tit{text-align: center;margin-bottom: 40px;}
+#container .cont3 .cont3_in ul{}
+#container .cont3 .cont3_in ul li:first-child{width: 610px; margin: 0 auto; padding-bottom: 55px;}
+#container .cont3 .cont3_in ul li:last-child{margin-right: 0px; display: none;}
+
+
+
+/* footer 시작 */
+ 
+
+#footer{
+    width: 100%; height: 325px;
+    background-color: #292929;
+}
+#footer .footerin{
+    width: 640px; height: 215px;
+    margin: 0 auto;
+    color: #b9b9b9;
+    position: relative;
+}
+#footer .footerin .flogo{
+    width:  640px; height: 69px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #b9b9b9;
+}
+#footer .footerin .flogo img{width: 108px; height: 52px;}
+#footer .footerin .finfo{
+    position: absolute;
+    top: 105px; left: 0px;
+}
+#footer .footerin .finfo .finfo_li{}
+#footer .footerin .finfo .finfo_li li{float: left;}
+#footer .footerin .finfo .finfo_li li::after{content: '|'; margin: 0 15px;}
+#footer .footerin .finfo .finfo_li li a{}
+#footer .footerin .finfo p{}
+#footer .footerin .finfo p{}
+#footer .footerin .finfo p:last-child span{text-decoration:underline;}
+#footer .footerin .fmenu{
+    position: absolute;
+    bottom: -10px;
+}
+#footer .footerin .fmenu li{float: left; font-size: 13px;}
+#footer .footerin .fmenu li::after{content: '|'; margin: 0 15px; }
+#footer .footerin .fmenu li a{}
+#footer .footerin .fsite{
+    position: absolute;
+    right: 0; top: 15px;
+}
+#footer .footerin .fsite select{
+    width: 170px; height: 30px;
+    font-size: 13px;
+    background: url(../img/footer_fsite_arrow.png)no-repeat 95% / 10px auto ;
+    border: 1px solid #b9b9b9;
+    padding: 6px;
+    color: #b9b9b9;
+    outline: none;
+}
+#footer .footerin .fsite select option{
+    background-color: #292929;
+}
+#footer .footerin .fsite select{appearance:none;-webkit-appearance:none;}
+
+#footer .footerin .fmark{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+
+/*
+#footer .footerin .finfo p:last-child a:hover{font-weight: bold; text-decoration: underline;}
+#footer .footerin .fmenu li:hover a{font-weight: bold; text-decoration: underline;}
+*/
+
+
+/* 상품목록 하버하면 이미지 확대되는거 빠짐!!**/
+
+
+
+
+
+
+
+
+
+
+
+

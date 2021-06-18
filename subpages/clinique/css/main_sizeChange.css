@@ -1,0 +1,690 @@
+#wrap{
+    width: 100%;
+}
+
+#header{
+    width: 100%; height: 120px;
+    background: url(../img/headerBg_v2.png) repeat-X 0 -36px;
+    position: fixed;
+    z-index: 600;
+}
+
+#header #headerin{
+    width: 1080px; height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header #headerin .logo a{
+    width: 164px; height: 25px;
+    background: url(../img/logo.png)no-repeat;
+    background-size: auto 25px;
+    font-size: 0;
+    position: absolute;
+    top: 35px;
+}/* 왜 포지션 안먹고 난리야 열받게...!!!!! 그렇게 니맘대로할거면 너 혼자살아! - 는 가로세로값을 어딘가에 안줘서 그랫던것^^빡 */
+
+
+
+
+
+
+#header #headerin nav .util{
+    position: absolute;
+    top: 15px; right: 0px;
+}
+
+#header #headerin nav .util li{
+    float: left;
+    background: url(../img/header_util_bar.png) no-repeat;
+    padding:0 18px;
+}
+
+#header #headerin nav .util li:first-child{
+    background: none;
+}
+
+#header #headerin nav .util li:last-child{padding-right: 0;}
+
+#header #headerin nav .util li a{
+    color: #777;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+#header #headerin nav .util li:hover a{
+    font-weight: bold;
+    color: #000;
+    font-size: 15.5px;
+}
+
+
+
+
+
+
+
+#header #headerin nav .sr{
+    position: absolute;
+    right: 320px;
+    top: 15px;
+} 
+#header #headerin nav .sr li{
+    float: left;
+    margin-left: 5px;
+}
+#header #headerin nav .sr input{
+    outline: none;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid #888;
+}
+
+#header #headerin nav .sr input::placeholder{
+    color: #888;
+    font-size: 11px;
+}
+#header #headerin nav .sr .search{
+    width: 15px; height: 16px;
+    background: url(../img/search.png)no-repeat center /13px auto/*5px*/;
+    font-size: 0;
+    display: block;
+    /*position: absolute;
+    top: 1px;
+    right: 378px;*/
+    transition: all 0.2s;
+    /*color: transparent;*/
+
+}/* 글자 투명도 말고 0으로 하면 아예사라지고 디스플레이블럭주면 빡치게 변하는디.. */
+#header #headerin nav .sr .search:hover{
+    background: url(../img/search.png)no-repeat center /15px auto;
+}
+
+
+
+
+
+
+
+
+
+#header #headerin nav .gnb{
+    position: absolute;
+    top: 56px; right: 0;
+}
+
+#header #headerin nav .gnb li{
+    float: left;
+    margin-left: 70px;
+}
+#header #headerin nav .gnb li:hover a{
+    font-size: 22px;
+    color: #000;
+}
+
+#header #headerin nav .gnb .bar{
+    background: url(../img/header_gnb_bar.png)no-repeat;
+    padding-left: 70px;
+}
+
+#header #headerin nav .gnb li a{
+    font-size: 20px;
+    font-weight:bold;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+/* mainVisual start */
+
+
+
+
+#mainVisual{
+    width: 100%; height: 730px;
+    background: url(../img/mainV_BG.jpg)no-repeat 0 0/ cover;
+    margin: -16px auto;
+    padding-top: 120px;
+}
+
+#mainVisual .mainVisualin{
+    width: 1200px; height: 730px;
+    background: url(../img/mainV1_img.png)no-repeat 0 -9px;
+    margin: -6px auto;
+    position: relative;
+}
+
+
+#mainVisual .mainVisualin .prod_img{
+    position: absolute;
+    left: 75px; top: 87px;
+    transition: all 0.5s;
+}
+
+#mainVisual:hover .mainVisualin .prod_img{
+    transform: scale(1.07);
+}
+
+#mainVisual .mainVisualin .pager{
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainVisual .mainVisualin .pager li{
+    width: 12px; height: 12px;
+    float: left;
+    background: url(../img/btn_off.png)no-repeat;
+    margin-right: 26px;
+    font-size: 0
+}
+#mainVisual .mainVisualin .pager li:last-child{
+    margin-right: 0px;
+}
+/*#mainVisual .mainVisualin .pager li:hover{
+    background: url(../img/btn_on.png)no-repeat;
+}*/
+#mainVisual .mainVisualin .pager li.on{
+    background: url(../img/btn_on.png)no-repeat;
+}
+
+#mainVisual .mainVisualin.pager li.on a{}
+
+#mainVisual .mainVisualin .prev{
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+#mainVisual .mainVisualin .next{
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+#mainVisual .mainVisualin p:hover{
+    opacity: 1;
+}
+
+
+
+
+
+/* container cont1 start */
+
+
+
+#container{
+    width: 100%; height: auto;
+    margin: 0  auto;
+    background-color:#fff;
+}
+
+#container #cont1{
+    width: 100%; height: 1400px;
+    background-color: #fff;
+}
+
+#container #cont1 .cont1_wrap{
+    width: 1200px; height: 1400px;
+    margin: 0 auto;
+}
+
+#container #cont1 .cont1in{
+    width: 1200px; height: 1400px;
+    background-color: #fff;
+    
+    /*border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;*/
+}
+
+#container #cont1 .cont1in .cont1_1{
+    width: 1200px; height: 614px;
+    position: relative;
+}
+
+#container #cont1 .cont1in .cont1_1>p{
+    width: 1200px; height: 560px; 
+    position: absolute;
+    top: 54px; left: 0;
+    border-top: 1px solid #ccc;
+}
+
+#container #cont1 .cont1in .cont1_1 .btn_more{
+    width: 150px; height: 40px;
+    background-color: #e99ea6;
+    position: absolute;
+    top: 516px; left:646px;
+    box-shadow: 5px 5px 20px 3px #bbb;
+    transition: all 0.5s;
+}
+#container #cont1 .cont1in .cont1_1 .btn_more:hover {
+    background-color: #000;
+    color: white;
+    transition: 
+}
+
+#container #cont1 .cont1in .cont1_1 .btn_more a{
+    display: block;
+    width: 150px; height: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 20px; 
+}
+
+#container #cont1 .cont1in .cont1_1 .btn_more span{
+    width: 8px; height: 14px;
+    background:url(../img/cont1_btn.png) no-repeat;
+    display: block;
+    font-size: 0;
+    margin-left: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+/*********************  하버 상품목록 start ; 노가다구간  *********************** **/
+
+#container #cont1 .cont1in .cont1_2 .pager_off{
+    width: 913px; height: 1px;
+    margin: 0 auto;
+    background-color: #c2c1c0;
+    position: absolute;
+    bottom: 230px; left: 50%;
+    transform: translateX(-52%);
+}/*페이저 슬라이더 바 1px짜리*/
+#container #cont1 .cont1in .cont1_2 .hover_shadow{
+    position: absolute;
+    top: 327px;
+}
+
+
+#container #cont1 .cont1in .cont1_2{
+    width: 1200px; height: 730px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+#container #cont1 .cont1in .cont1_2 .hover{
+    /*width: 1200px; height: 730px;*/
+    display:flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+#container #cont1 .cont1in .cont1_2 .hover li{
+    float: left;
+    text-align: center;
+    margin-right: 30px;
+    width: 198px;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff a .txt{
+    font-weight: bold;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn a .txt span{
+    font-weight: bold;
+    color: #e99ea6;
+}
+/*
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn a .img{
+    border: 7px solid #e99ea6;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff a .img{
+    border: 7px solid transparent;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+*//* 왜.. 왜에 바들바들 떠는거야.. 나 무서운 사람 아닌디.. 제발 그만 떨오.. */
+/* 트랜지션도 주고싶은데,, 한계,, */
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_1 a .img{transition: all 1.5s;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_1 a .pager{transition: all 1.5s;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_1 a .txt{transition: all 1.5s;}
+
+#container #cont1 .cont1in .cont1_2 .hover li:last-child{margin-right: 0;}
+#container #cont1 .cont1in .cont1_2 .hover li a{font-size: 16px;}
+
+
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff p{margin-bottom: 40px;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff p:last-child{margin-bottom: 0px;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn p{margin-bottom: 40px;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn p:last-child{margin-bottom: 0px;}
+
+
+
+
+
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_1{/*display: none;*/}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_2{/*display: none;*/}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_3{/*display: none;*/}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_4{/*display: none;*/}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_5{/*display: none;*/}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_1{
+    position: absolute;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_2{
+    position: absolute;
+    left: 228px;
+    transition: all 1.5s;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_3{
+    position: absolute;
+    left: 456px;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_4{
+    position: absolute;
+    left: 684px;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn_5{
+    position: absolute;
+    left: 912px;
+}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOn{display: none;}
+/*#container #cont1 .cont1in .cont1_2 .hover li.hoverOff:hover~li.hoverOn{display: block;}*/
+
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_1:hover~li.hoverOn_1{display: block;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_2:hover~li.hoverOn_2{display: block;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_3:hover~li.hoverOn_3{display: block;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_4:hover~li.hoverOn_4{display: block;}
+#container #cont1 .cont1in .cont1_2 .hover li.hoverOff_5:hover~li.hoverOn_5{display: block;}
+
+
+
+
+/*********************  하버 상품목록 ; 노가다구간 끝!! *********************** **/
+
+
+
+
+
+/* cont2 start */
+
+
+
+
+#container #cont2{
+    width: 100%; height: 600px;
+    background-color: #ffdcdc;
+}
+
+#container #cont2 .cont2in{
+    width: 1200px; height: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#container #cont2 .cont2in .img{
+    position: absolute;
+    top: 60px;
+}
+
+#container #cont2 .btn{
+    width: 150px; height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 400px; left: 31px;
+    box-shadow: 5px 5px 20px 3px #bbb;
+    color: #888;
+    transition: all 0.5s;
+}
+#container #cont2 .btn .hover{
+    opacity: 0;
+    transition: all 0.5s;
+}
+#container #cont2 .btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+#container #cont2 .btn:hover .hover{
+    opacity: 1;
+}
+#container #cont2 .btn:hover .hover_off{
+    display: none;
+}
+
+#container #cont2 .btn a{
+    width: 150px; height: 40px;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 20px; 
+    font-weight: bold;
+    
+}
+
+#container #cont2 .btn img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 120px;
+}
+
+#container #cont2 .cont2in .pager{
+    position: absolute;
+    top: 510px; left: 868px;
+}
+
+#container #cont2 .cont2in .pager li{
+    float: left;
+}
+#container #cont2 .cont2in .pager li a{
+    width: 12px; height: 12px;
+    float: left;
+    background: url(../img/btn_off.png)no-repeat;
+    margin-right: 26px;
+    font-size: 0;
+}
+
+#container #cont2 .cont2in .pager li.on a{
+    background:url(../img/btn_on.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* banner start */
+
+
+
+
+#banner{
+    width: 100%; height: 322px;
+    background: url(../img/banner_bg.png)no-repeat center center/ cover;
+    transition: all 0.8s;
+
+} 
+
+#banner .bannerin{
+    width:1200px; height: 322px;
+    margin: auto;
+    position: relative;
+}
+
+#banner .bannerin p{
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%); 
+}
+/*#banner .bannerin p img{
+    transition: all 0.5s;
+}
+#banner:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* cont3 start */
+
+
+
+
+#cont3{
+    width: 100%; height: 800px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+
+#cont3 .cont3in{
+    width: 1200px; height: 680px;
+    margin: 120px auto;
+    position: relative;
+}
+
+#cont3 .cont3in p{
+    width: 631px;
+    margin: 0 auto 26px auto;
+}
+#cont3 .cont3in .img{}
+#cont3 .cont3in .img li{
+    width: 300px; height: 300px;
+    float: left;
+}
+#cont3 .cont3in .img li .hover{
+    width: 300px; height: 300px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#cont3 .cont3in .img li:hover .hover{
+    display: block;
+    opacity: 1;
+}
+
+
+#cont3 .cont3in .img li:first-child .hover{position: absolute;left: 0;top: 79px}
+#cont3 .cont3in .img li:nth-child(2) .hover{position: absolute;left: 300px;top: 79px}
+#cont3 .cont3in .img li:nth-child(3) .hover{position: absolute;left: 600px; top: 79px}
+#cont3 .cont3in .img li:nth-child(4) .hover{position: absolute;left: 900px; top: 79px}
+#cont3 .cont3in .img li:nth-child(5) .hover{position: absolute;left: 0px; top: 379px}
+#cont3 .cont3in .img li:nth-child(6) .hover{position: absolute;left: 300px; top: 379px}
+#cont3 .cont3in .img li:nth-child(7) .hover{position: absolute;left: 600px; top: 379px}
+#cont3 .cont3in .img li:nth-child(8) .hover{position: absolute;left: 900px; top: 379px}
+
+
+
+
+
+/* footer start */
+
+
+
+
+
+#footer{
+    width: 100%; height: 195px;
+    background-color: #494949;
+}
+
+#footer .footerin{
+    width: 1200px; height: 195px;
+    margin: 0 auto;
+    position: relative;
+    color: #ccc;
+}
+
+#footer .fmenu{
+    width: 1200px;
+    border-bottom: 1px solid #ccc;
+    padding: 17px 0;
+}
+
+#footer .fmenu li{
+    float: left;
+    background: url(../img/footer_bar.png)no-repeat 0 3px;
+    font-size: 12px;
+    padding: 0px 12px 0 10px;
+}
+#footer .fmenu li:first-child{background: none;padding-left: }
+#footer .fmenu li:hover a{
+    font-weight: bold;
+}
+
+
+#footer .fmark{
+    width: 38px; height: 38px;
+    position: absolute;
+    bottom: 30px; right: 425px;
+}
+
+#footer .fsite{
+    width: 1200px;
+    position: absolute;
+    top: 74px;
+    margin-left: 10px;
+}
+#footer .fsite p{
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+#footer .fsite select{
+    width: 150px; height: 20px;
+    font-size: 12px;
+    background: url(../img/footer_select.png)no-repeat 95%;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #ccc;
+    outline: none;
+}
+#footer .fsite select{appearance:none;-webkit-appearance:none;}
+
+#footer .fsite option{}
+
+
+#footer .flink{
+    width: 1200px;
+    font-size: 12px;
+    line-height:1.1;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,294 @@
+#wrap{
+    width: 100%;
+}
+
+#header{
+    width: 100%; height: 129px;
+    background: url(../img/headerBg.png) repeat-X;
+}
+
+#header #headerin{
+    width: 1200px; height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header #headerin .logo{
+    width: 164px; height: 34px;
+    background: url(../img/logo.png)no-repeat;
+    font-size: 0;
+    position: absolute;
+    top: 43px;
+}/* 왜 포지션 안먹고 난리야 열받게...!!!!! 그렇게 니맘대로할거면 너 혼자살아! - 는 가로세로값을 어딘가에 안줘서 그랫던것^^빡 */
+
+#header #headerin nav .util{
+    position: absolute;
+    top: 4px; right: 0px;
+}
+
+#header #headerin nav .util li{
+    float: left;
+    background: url(../img/header_util_bar.png) no-repeat;
+    padding:0 18px;
+}
+
+#header #headerin nav .util li:first-child{
+    background: none;
+    padding: 0;
+}
+#header #headerin nav .util li:nth-child(2){
+    background: none;
+    padding-left: 50px;
+}
+#header #headerin nav .util li:last-child{padding-right: 0;}
+
+#header #headerin nav .util li a{
+    color: #777;
+    font-size: 15px;
+}
+
+#header #headerin nav .util li input{
+    outline: none;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid #888;
+}
+#header #headerin nav .util li input::placeholder{
+    color: #888;
+    font-size: 11px;
+}
+#header #headerin nav .util li .search{
+    width: 15px; height: 16px;
+    background: url(../img/search.png)no-repeat center /13px auto/*5px*/;
+    font-size: 0;
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 378px;
+    /*color: transparent;*/
+
+}/* 글자 투명도 말고 0으로 하면 아예사라지고 디스플레이블럭주면 빡치게 변하는디.. */
+
+#header #headerin nav .gnb{
+    position: absolute;
+    top: 50px; right: 0;
+}
+
+#header #headerin nav .gnb li{
+    float: left;
+    margin-left: 70px;
+}
+
+#header #headerin nav .gnb .bar{
+    background: url(../img/header_gnb_bar.png)no-repeat;
+    padding-left: 70px;
+}
+
+#header #headerin nav .gnb li a{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+
+
+
+/* mainVisual start */
+
+
+
+
+#mainVisual{
+    width: 100%; height: 730px;
+    background: url(../img/mainV_BG.jpg)no-repeat 0 0/ cover;
+    margin: -9px auto;
+}
+
+#mainVisual .mainVisualin{
+    width: 1200px; height: 730px;
+    background: url(../img/mainV1_img.jpg)no-repeat 0 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+#mainVisual .mainVisualin .pager{
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainVisual .mainVisualin .pager li{
+    width: 12px; height: 12px;
+    float: left;
+    background: url(../img/btn_off.png)no-repeat;
+    margin-right: 26px;
+    font-size: 0
+}
+#mainVisual .mainVisualin .pager li:last-child{
+    margin-right: 0px;
+}
+/*#mainVisual .mainVisualin .pager li:hover{
+    background: url(../img/btn_on.png)no-repeat;
+}*/
+#mainVisual .mainVisualin .pager li.on{
+    background: url(../img/btn_on.png)no-repeat;
+}
+
+#mainVisual .mainVisualin.pager li.on a{}
+
+#mainVisual .mainVisualin .prev{
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+}
+#mainVisual .mainVisualin .next{
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* container cont1 start */
+
+
+
+#container{
+    width: 100%; height: auto;
+    margin: 0 auto;
+}
+
+#container #cont1{
+    width: 1200px; height: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#container #cont1 .cont1in{
+    width: 1200px; height: 1289px;
+    background-color: aquamarine;
+    margin: 55px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#container #cont1 .cont1in>p{
+    width: 1200px; height: 560px;
+    position: absolute;
+    top: 54px; left: 0;
+}
+
+#container #cont1 .cont1in .btn_more{
+    width: 150px; height: 40px;
+    background-color: #e99ea6;
+    position: absolute;
+    top: 571px; left:646px;
+    box-shadow: 5px 5px 20px 3px #bbb;
+}
+
+#container #cont1 .cont1in .btn_more a{
+    display: block;
+    width: 150px; height: 40px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0px 0 10px;    
+}
+
+#container #cont1 .cont1in .btn_more span{
+    width: 8px; height: 14px;
+    background: url(../img/cont1_btn.png) no-repeat;
+    display: block;
+    font-size: 0;
+    margin-left: 125px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 하버 상품목록 start */
+
+#container #cont1 .cont1in .prod{
+    width: 1200px; height: 675px;
+    position: relative;
+}/* 얘는 또 왜 포지션이 안먹고 둥둥 떠댕기는지... 모를.. */
+
+#container #cont1 .cont1in .prod .prodin{
+    width: 1200px; height: 675px;
+    position: absolute;
+    top: 613px;
+}
+
+#container #cont1 .cont1in .prod .prod_img{
+    display:flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 50%; bottom: 267px;
+    transform: translateX(-50%);
+}
+
+#container #cont1 .cont1in .prod .prod_img li{
+    float: left;
+    margin-right: 125px;
+}
+#container #cont1 .cont1in .prod .prod_img li:last-child{margin-right: 0;}
+
+#container #cont1 .cont1in .prod .prod_img li a img{
+    
+}
+
+#container #cont1 .cont1in .prod .prod_img .hover{
+    display: none;
+}
+
+#container #cont1 .cont1in .prod .pager{
+    position: absolute;
+    bottom: 221px;
+}
+
+#container #cont1 .cont1in .prod .pager .pager_hover{
+    position: absolute;
+    left: 138px;
+    bottom: 4px;
+} 
+
+#container #cont1 .cont1in .prod .pager_hover li{
+    width: 14px; height: 14px;
+    float: left;
+    margin-left: 214px;
+    /*display: none;*/
+}
+ 
+#container #cont1 .cont1in .prod .pager_hover li:first-child{margin-left: 0;}
+
+#container #cont1 .cont1in .prod .prod_txt{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+}
+
+#container #cont1 .cont1in .prod .prod_txt li{
+    float: left;/*
+    margin-right: 10px;
+    text-align: center;*/
+}
+#container #cont1 .cont1in .prod .prod_txt li a{
+    font-size: 16px;
+}
+#container #cont1 .cont1in .prod .prod_txt li:last-child{margin-right: 0;}
+
+#container #cont1 .cont1in .prod .prod_txt li span{
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+

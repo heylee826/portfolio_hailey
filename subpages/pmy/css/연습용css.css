@@ -1,0 +1,253 @@
+#header {
+    height: 110px;
+    width: 100%;
+  }
+  
+  #header .header_top {
+    height: 65px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+  }
+  
+  #header .header_top .logo a {
+    display: block;
+    background: url(../img/logo.png) no-repeat;
+    height: 98px;
+    width: 93px;
+    margin-top: 12px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+  }
+  
+  #header .header_top .top_right {
+    height: 65px;
+    position: absolute;
+    right: 0;
+  }
+  
+  #header .header_top .top_right ul:last-child {
+    margin-right: 60px;
+  }
+  
+  #header .header_top .top_right ul {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  #header .header_top .top_right .util {
+    height: 65px;
+    width: 183px;
+    margin-top: 26px;
+  }
+  
+  /* 유틸 각각 모양 다 만들어두고, 통째로 플로트레프트 해보자~!*/
+  #header .header_top .top_right .util li {
+    float: left;
+    margin-left: 14px;
+  }
+  
+  #header .header_top .top_right .util li:first-child {
+    margin-left: 0px;
+  }
+  
+  #header .header_top .top_right .util li a {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  #header .header_top .top_right .search {
+    width: 156px;
+    height: 65px;
+    position: relative;
+    margin-top: 17px;
+  }
+  
+  #header .header_top .top_right .search li input {
+    outline: none;
+    background: transparent;
+    border-radius: 15px;
+    border-bottom: 1px solid #fff;
+    width: 156px;
+    height: 30px;
+    border: 1px solid #fff;
+  }
+  
+  #header .header_top .top_right .search li input::placeholder {
+    color: #fff;
+    padding-left: 10px;
+  }
+  
+  #header .header_top .top_right .search li:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  
+  #header .header_top .top_right .search li a {
+    display: block;
+    background: url(../img/headr_search.png) no-repeat;
+    width: 21px;
+    font-size: 0;
+  }
+  
+  #header .header_top .top_right .icon {
+    height: 65px;
+    width: 71px;
+    margin-top: 17px;
+  }
+  
+  #header .header_top .top_right .icon li {
+    float: left;
+    margin-left: 14px;
+  }
+  
+  #header .header_top .top_right .icon li:first-child {
+    margin-left: 0px;
+  }
+  
+  #header .header_top .top_right .icon li:first-child a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/header_mypage.png)no-repeat;
+    font-size: 0;
+  }
+  
+  #header .header_top .top_right .icon li:last-child a {
+    display: block;
+    width: 27px;
+    height: 30px;
+    background: url(../img/header_cart.png)no-repeat;
+    font-size: 0;
+  }
+  
+  #header .header_top .menu_btn {
+    width: 37px;
+    height: 65px;
+    position: absolute;
+    left: 60px;
+  }
+  
+  #header .header_top .menu_btn a {
+    display: block;
+    background: url(../img/header_menu.png) no-repeat;
+    width: 37px;
+    height: 29px;
+    font-size: 0;
+    margin-top: 18px;
+  }
+  
+  #header:hover .header_top {
+    background-color: #fff;
+  }
+  
+  #header:hover .header_top .logo a {
+    background-position: 0 -56px;
+  }
+  
+  #header .header_top .top_right .util li:hover a{text-decoration: underline;}
+  #header .header_top .top_right .util li:hover a{text-decoration: underline;}
+  #header:hover .header_top .top_right .util li a{color: #000;}
+  
+  #header:hover .header_top .top_right .search li a {
+    background-position: 0 -40px;
+  }
+  
+  #header:hover .header_top .top_right .search li input {
+    border-color: #000;
+  }
+  
+  #header:hover .header_top .top_right .icon li:first-child a {
+    background-position: 0 -40px;
+  }
+  
+  #header:hover .header_top .top_right .icon li:last-child a {
+    background-position: 0 -40px;
+  }
+  
+  #header:hover .header_top .menu_btn a {
+    background-position: 0 -40px;
+  }
+  
+  #header:hover .header_bottom {
+    background-color: #000;
+  }
+  
+  #header:hover .header_top .top_right .search li input::placeholder {
+    color: #777;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #header .header_bottom {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    z-index: 200;
+  }
+  
+  /*바텀만 메인슬라이드 넣으니 안나와서 여쭤보니, 탑이랑, 바틈에 z-index줘보자고! 그리고z-index는 포지션을 줘야 먹힌대, 그래서 필요없지만 포지션 렐러티브 줬음 와 신기해!!*/
+  #header .header_bottom .gnb {
+    width: 768px;
+    margin: 0px auto;
+  }
+  
+  /*계속 틀어지고 난리했던게, 위드값이 뭔가 안맞았나 그래서! 그래서 각각에게 가로값을 주고, 그거 다 더하고, 더하기 마진레프트 준거 다 더해서 
+  
+  (26+44+95+33 + (마진값3개190*3)=768px)
+  얘의 정확한 위드값을 주고 마진영오토를 주니 가운데 왔고, 페이지를 줄여도 딩딩떠다니지 않게 되었다~! 100%에서 포지션을 주고 해버리면 화면 크기 움직일때마다 떠버린대 왜냐면 화면 사이즈를 무조건 100%로 잡고 포지션을 준거기때문에*/
+  #header .header_bottom .gnb li {
+    float: left;
+    margin-left: 190px;
+    margin-top: 16px;
+  }
+  
+  #header .header_bottom .gnb li:nth-child(1) {
+    width: 26px;
+  }
+  
+  #header .header_bottom .gnb li:nth-child(2) {
+    width: 44px;
+  }
+  
+  #header .header_bottom .gnb li:nth-child(3) {
+    width: 95px;
+  }
+  
+  #header .header_bottom .gnb li:nth-child(4) {
+    width: 33px;
+  }
+  
+  #header .header_bottom .gnb li:first-child {
+    margin-left: 0;
+  }
+  
+  .gnb li:hover img{
+    border-bottom: 1px solid #fff;
+  }
+  
+  /*#header .header_bottom .gnb li a{
+      font-size: 20px;
+      font-weight: bolder;
+      color: #fff;
+  }
+  #header .header_bottom .gnb li:hover a{
+      text-decoration: underline;
+  }
+  #header .header_bottom .gnb li img{display: none;}*/
+  /* gnb폰트 이뻐서 이미지할랬는데 넘 희끄므리하고 어더라인 하버효과도 못줬서 걍 구린 저걸로 바꿈 ㅠㅠ., */
+  
+  
+  
+  
+  
+  
+  /* 헤더 끝 신난당^^ */

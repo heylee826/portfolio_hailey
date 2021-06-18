@@ -1,10 +1,10 @@
 .circle-progress {
-    width: 100%; height: 486px;
-    background-color: rgba(000,000,000,0.05);
+    width: 90%; height: 40%;
     position: relative;
-    top: -70%;
+    top: -80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
     /* width: 1080px; height: 486px;
     background-color: rebeccapurple;
     display: flex;
@@ -18,13 +18,24 @@
     margin: 0;
     width: 110px;
 }
+
+.circle-progress .ability_L {
+    width: 20%;
+    height: 50%;
+}
+.circle-progress .ability_R {
+    width: 20%;
+    height: 50%;
+}
 .circle{
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .progressbar-section {
     padding: 100px 0;
 }
@@ -43,21 +54,19 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
-    max-width: 25%;
+    /* max-width: 100%; */
     text-align: center;
-    display: flex;
-    flex-direction: row;
 }
 
 /* canvas사이즈 div로 만들어서 h2가운데 배치 */
 .circle .circle-inner {
-    width: 80px;
-    height: 80px;
+    width: 25%;
+    height: 45%;
     position: absolute;
     top:0;
 }
 .skill-item h2 {
-    font-size: 2vh;
+    font-size: 1.7vh;
     line-height: 1.1;
     position: absolute;
     top: 50%;
@@ -126,7 +135,3 @@ margin-top: 100px;
 .my-links ul p {
     margin: 0;
 }
-
-
-
-

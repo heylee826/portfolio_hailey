@@ -1,0 +1,776 @@
+/* COMMON */
+body{
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+  box-sizing: border-box;
+}
+img{
+  display:block;
+  /* vertical-align: top; */
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+    list-style: none;
+}
+/* .clear:after {
+  display: block;
+  content: '';
+  clear: both;
+} */
+
+
+
+
+.pageSoft{
+  height: 100vh;
+}
+#home{
+  background: url(../img/bg_01.jpg) center;
+}
+#cont1{
+  background: url(../img/bg_02.jpg) center;
+}
+#cont2{
+  background: url(../img/bg_03.jpg) center;
+}
+#cont3{
+  background: url(../img/bg_04.jpg) center;
+}
+
+
+
+
+/*header시작*/
+#header{
+  position: fixed;
+  height: 12vh;
+  width: 100%;
+  background-color: rgba(255,255,255,1);
+  z-index: 10;
+  /* display: none; */
+}
+/*자바에서 추가한 클래스 .opa*/
+#header.opa{
+  background-color: rgba(255,255,255,0.5);
+  margin-top: -5.5vh;
+}
+#header .logo{
+  display: block;
+  width: 10%;
+  height: 45%;
+  margin: 0 auto;
+}
+#header .logo img {height: 100%; margin: 0 auto;}
+#header .headerin{
+  width: 80%; height: 47%;
+  margin: 0 auto;
+}
+#header .headerin .gnb{
+  height: 100%;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#header .headerin .gnb li{}
+#header .headerin .gnb li a{
+  width: 100%;
+  background-color: cornflowerblue;
+  font-size: 0.9vw;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+#header .headerin .gnb li a:hover {color: orange;}
+/* 왜 하버값이 안먹히는지 ? - 램프에 가려져 있네 내려가서 해결하자 */
+
+
+
+
+
+/*home시작*/
+
+#home{
+  width: 100%;
+  overflow: hidden;
+}
+#home .home-wrap {
+  width: 80%;
+  background-color: rgba(218, 112, 214, 0.397);
+  margin: 0 auto;
+  position: relative;
+  margin-top: 12vh;
+  
+}
+/* home - 램프 영역 */
+#home .home-wrap .lamp-wrap {
+  width: 110%;
+  display: flex;
+  background-color: rgba(238, 232, 170, 0.315);
+  margin-left: -5%;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+#home .home-wrap .lamp-wrap .lampL {
+  width: 20%;
+  position: relative;
+  background-color: rgba(95, 158, 160, 0.445);
+}
+#home .home-wrap .lamp-wrap .lampL>p {
+  width: 45%;
+}
+#home .home-wrap .lamp-wrap .lampL .lighting {
+  width: 100%;
+  position: absolute;
+  top: 45%; left: 15%;
+}
+#home .home-wrap .lamp-wrap .lampL p img {width: 100%;}
+#home .home-wrap .lamp-wrap .lampR {
+  width: 20%;
+  position: relative;
+  background-color: rgba(95, 158, 160, 0.445);
+}
+#home .home-wrap .lamp-wrap .lampR>p {
+  width: 45%;
+  position: absolute;
+  right: 0;
+}
+#home .home-wrap .lamp-wrap .lampR .lighting {
+  width: 100%;
+  position: absolute;
+  top: 45%; right: 15%;
+}
+#home .home-wrap .lamp-wrap .lampR p img {width: 100%;}
+/*이따 여기 하버효과로 바꿀것*/
+
+
+/* home -슬라이더 액자 위치잡기 */
+#home .home-wrap .frame-wrap {
+  width: 65%;
+  background-color: rgba(128, 255, 0, 0.301);
+  position: relative;
+  margin: 0 auto;
+  margin-top: -4%;
+  z-index: 5;
+}
+#home .home-wrap .frame-wrap .frame {width: 100%;}
+#home .home-wrap .frame-wrap .explain {
+  width: 10%;
+  position: absolute;
+  right: -13%;
+  top: 85%;
+  margin-top: 1%;
+}
+#home .home-wrap .frame-wrap p img {width: 100%;}
+
+/* home - 스와이퍼 영역 */
+#home .home-wrap .swiper-container {
+  width: 59%; height: 78%;
+  position: absolute;
+  top: 59.5%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+#home .home-wrap .swiper-container .swiper-wrapper {
+  width: 100%;
+}
+#home .home-wrap .swiper-container .swiper-wrapper .swiper-slide {
+ width: 100%; 
+}
+#home .home-wrap .swiper-container .swiper-wrapper .swiper-slide p {
+ width: 100%;
+}
+#home .home-wrap .swiper-container .swiper-wrapper .swiper-slide p img {width: 100%;}
+#home .home-wrap .swiper-pagination {}
+#home .home-wrap .swiper-button-prev {
+  position: absolute;
+  left: 15%;
+  color: #ddd;
+}
+#home .home-wrap .swiper-button-next {
+  position: absolute;
+  right: 15%;
+  color: #ddd;
+}
+/*home 끝*/
+
+
+
+
+
+
+/*cont1시작*/
+/* #cont1{width: 100%; height: auto;} */
+#cont1{overflow: hidden; position: relative;}
+#cont1 .fence {
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.377);
+  position: absolute;
+  bottom: 0;
+}
+#cont1 .fence img {width: 100%;}
+#cont1 .cont1in{
+  width: 80%; height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(127, 255, 212, 0.274);
+}
+#cont1 .cont1in .txt{
+  width: 18%;
+  position: absolute;
+  top: 12%; left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
+#cont1 .cont1in h1{
+  background-color: rgba(0,0,0,0.5);
+  font-size: 1.0vw;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 2%;
+}
+#cont1 .cont1in h1 span{font-size: 2vw; font-weight: bold;}
+
+/* lamp 영역 시작 */
+#cont1 .cont1in .lamp2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color:rgba(176, 224, 230, 0.39);
+  border: 3px solid red;
+  margin-top: -6%;
+  position: relative;
+  
+}
+#cont1 .cont1in .lamp2 .sec01 {
+  background-color: rgba(134, 106, 165, 0.288);
+  width: 30%;
+  position: relative;
+}
+#cont1 .cont1in .lamp2 .lamp{
+  width: 18%;
+  margin: 0 auto;
+  background-color: rgb(222, 184, 135);
+}
+#cont1 .cont1in .lamp2 .frame {
+  width: 71%;
+  margin: 0 auto;
+  margin-top: 8%;
+  background-color: rgba(220, 20, 60, 0.616);
+  position: relative;
+}
+#cont1 .cont1in .lamp2 .empty_box {
+  /* background-color: rgba(0, 255, 0, 0.295); */
+  /* border: 2px solid rebeccapurple; */
+  display: block;
+  width: 71%; height: 33%;
+  position: absolute;
+  top: 27.1%; left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+/* 0614 - 하버 시키기 위한 빈구조'empty_box'를 추가함 - 자세히보기 버튼도 눌러야해서 추가함 */
+#cont1 .cont1in .lamp2 .empty_box .detail_btn {
+  display: flex;
+  flex-direction: row;
+  width: 41%; height: 8%;
+  position: absolute;
+  top: 78.5%; left: 50%; transform: translateX(-50%);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0;
+  transition: all 1s;
+  /* background-color: rgba(220, 20, 60, 0.616); */
+}
+#cont1 .cont1in .lamp2 .empty_box .detail_btn a {
+  font-weight: bold;
+  font-size: 0.8vw;
+  padding-top: 5%;
+  display: block;
+  margin: 0 auto;
+}
+#cont1 .cont1in .lamp2 .empty_box .detail_btn a span {
+  opacity: 0;
+}
+#cont1 .cont1in .lamp2 .empty_box .detail_btn:hover {
+ background-color: rgba(255, 255, 255, 0.384);
+ transition: all 0.1s;
+}
+#cont1 .cont1in .lamp2 .empty_box .detail_btn .material-icons {
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: rgba(128, 255, 0, 0.301); */
+  position: absolute;
+  top: 28%; right: 15%;
+}
+#cont1 .cont1in .lamp2 .empty_box:hover ~ .lighting {opacity: 1; }
+#cont1 .cont1in .lamp2 .empty_box:hover ~ .frame_info {opacity: 1; }
+#cont1 .cont1in .lamp2 .empty_box:hover .detail_btn {opacity: 1; }
+/* 0613 - 여기까지 하다가 자러감, 마우스 오버로 불키고싶은데, 겹침영역때문에떨림 */
+/* 어떻게 해결할 수 있을지 더 고민해보기, 그래도 안되면 스크롤해서 오면 켜지게로 하자..ㅠ */
+#cont1 .cont1in .lamp2 .lighting{
+  width: 90%; 
+  margin: 0 auto;
+  position: relative;
+  top: -37%;
+  z-index: 10;
+  opacity: 0;
+  transition: all .3s;
+  /* background-color: rgba(255, 0, 0, 0.342); */
+}
+#cont1 .cont1in .lamp2 .frame_info {
+  width: 57.1%; height: 28.8%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 29.4%; left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1s;
+}
+#cont1 .cont1in .lamp2 .frame_info p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8vw;
+  position: relative;
+}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(1) {}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(2) {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 3% auto;
+}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(3) {
+  font-size: 0.5vw;
+  margin-bottom: 20%;
+}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(4) {
+  width: 50%;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;  left: 50%; transform: translateX(-50%);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: rgba(218, 112, 214, 0.397);
+}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(4) a {
+  display: block;
+  padding: 3%;
+}
+#cont1 .cont1in .lamp2 .frame_info p:nth-child(4) a .material-icons {
+  
+}
+#cont1 .cont1in .lamp2 .lamp img {width: 100%;}
+#cont1 .cont1in .lamp2 .lighting img {width: 100%;}
+#cont1 .cont1in .lamp2 .frame img {width: 100%;}
+#cont1 .cont1in .lamp2 .frame .explain {
+  width: 21%;
+  position: absolute;
+  right: 0;
+  margin-top: 2%;
+}
+/*cont1 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*cont2 시작*/
+/* #cont2{overflow:;} */
+#cont2{overflow: hidden; position: relative;}
+#cont2 .fence {
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.377);
+  position: absolute;
+  bottom: 0;
+}
+#cont2 .fence img {width: 100%;}
+#cont2 .cont2in{
+  width: 80%; height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(127, 255, 212, 0.274);
+}
+#cont2 .cont2in .txt{
+  width: 18%;
+  position: absolute;
+  top: 12%; left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
+#cont2 .cont2in .txt h1{
+  background-color: rgba(0,0,0,0.5);
+  font-size: 1.0vw;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 2%;
+}
+#cont2 .cont2in .txt h1 span{font-size: 2vw; font-weight: bold;}
+
+
+/* lamp 영역 */
+#cont2 .cont2in .lamp3{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color:rgba(176, 224, 230, 0.233);
+  border: 3px solid red;
+  margin-top: -6%;
+  position: relative;
+}
+#cont2 .cont2in .lamp3 .sec01 {
+  background-color: rgba(134, 106, 165, 0.295);
+  width: 30%;
+  position: relative;
+}
+#cont2 .cont2in .lamp3 .lamp{
+  width: 18%;
+  margin: 0 auto;
+  background-color: rgb(222, 184, 135);
+}
+
+
+
+
+#cont2 .cont2in .lamp3 .frame {
+  width: 71%;
+  margin: 0 auto;
+  margin-top: 8%;
+  background-color: rgba(220, 20, 60, 0.616);
+  position: relative;
+}
+
+
+
+
+#cont2 .cont2in .lamp3 .stand {
+  width: 71%;
+  background-color: rgba(127, 255, 212, 0.445);
+  margin: 0 auto;
+}
+#cont2 .cont2in .lamp3 .stand img {width: 100%;}
+
+
+
+
+#cont2 .cont2in .lamp3 .empty_box {
+  /* background-color: rgba(0, 255, 0, 0.295); */
+  /* border: 2px solid rebeccapurple; */
+  display: block;
+  width: 71%; height: 20.3%;
+  position: absolute;
+  top: 28.7%; left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+#cont2 .cont2in .lamp3 .empty_box_middle {
+  /* background-color: rgba(255, 0, 55, 0.295); */
+  /* border: 2px solid rebeccapurple; */
+  top: 23%; left: 50%;
+}
+/* 0614 - 하버 시키기 위한 빈구조'empty_box'를 추가함 - 자세히보기 버튼도 눌러야해서 추가함 */
+#cont2 .cont2in .lamp3 .empty_box .detail_btn {
+  display: flex;
+  flex-direction: row;
+  width: 41%; height: 11%;
+  position: absolute;
+  top: 78.5%; left: 50%; transform: translateX(-50%);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0;
+  transition: all 1s;
+  /* background-color: rgba(220, 20, 60, 0.616); */
+}
+#cont2 .cont2in .lamp3 .empty_box .detail_btn a {
+  font-weight: bold;
+  font-size: 0.8vw;
+  padding-top: 5%;
+  display: block;
+  margin: 0 auto;
+}
+#cont2 .cont2in .lamp3 .empty_box .detail_btn a span {
+  opacity: 0;
+}
+#cont2 .cont2in .lamp3 .empty_box .detail_btn:hover {
+ background-color: rgba(255, 255, 255, 0.384);
+ transition: all 0.1s;
+}
+#cont2 .cont2in .lamp3 .empty_box .detail_btn .material-icons {
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: rgba(128, 255, 0, 0.301); */
+  position: absolute;
+  top: 28%; right: 15%;
+}
+
+
+
+
+#cont2 .cont2in .lamp3 .lighting{
+  width: 90%; 
+  margin: 0 auto;
+  position: relative;
+  top: -41%;
+  z-index: 10;
+  opacity: 0;
+  transition: all .3s;
+  /* background-color: rgba(255, 0, 0, 0.342); */
+}
+#cont2 .cont2in .lamp3 .lighting_middle {
+  top: -47%;
+}
+
+
+
+#cont2 .cont2in .lamp3 .frame_info {
+  width: 66.48%; height: 18.97%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 29.34%; left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1s;
+}
+#cont2 .cont2in .lamp3 .frame_info_middle {
+  top: 23.69%;
+}
+#cont2 .cont2in .lamp3 .frame_info p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8vw;
+  position: relative;
+}
+#cont2 .cont2in .lamp3 .frame_info p:nth-child(1) {}
+#cont2 .cont2in .lamp3 .frame_info p:nth-child(2) {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 3% auto;
+}
+#cont2 .cont2in .lamp3 .frame_info p:nth-child(3) {
+  font-size: 0.5vw;
+  margin-bottom: 20%;
+}
+#cont2 .cont2in .lamp3 .frame_info p:nth-child(4) {
+  width: 50%;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;  left: 50%; transform: translateX(-50%);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: rgba(218, 112, 214, 0.397);
+}
+#cont2 .cont2in .lamp3 .frame_info p:nth-child(4) a {
+  display: block;
+  padding: 3%;
+}
+#cont2 .cont1in .lamp2 .frame_info p:nth-child(4) a .material-icons {
+  
+}
+#cont2 .cont2in .lamp3 .empty_box:hover ~ .lighting {opacity: 1; }
+#cont2 .cont2in .lamp3 .empty_box:hover ~ .frame_info {opacity: 1; }
+#cont2 .cont2in .lamp3 .empty_box:hover .detail_btn {opacity: 1; }
+/* 0613 - 여기까지 하다가 자러감, 마우스 오버로 불키고싶은데, 겹침영역때문에떨림 */
+/* 어떻게 해결할 수 있을지 더 고민해보기, 그래도 안되면 스크롤해서 오면 켜지게로 하자..ㅠ */
+
+#cont2 .cont2in .lamp3 .lamp img {width: 100%;}
+#cont2 .cont2in .lamp3 .lighting img {width: 100%;}
+#cont2 .cont2in .lamp3 .frame img {width: 100%;}
+#cont2 .cont2in .lamp3 .frame .explain {
+  width: 21%;
+  position: absolute;
+  right: 0;
+  margin-top: 2%;
+}
+
+
+
+
+
+/* cont3 시작 */
+#cont3{overflow: hidden; position: relative;}
+#cont3 .cont3in{
+  width: 80%; height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(127, 255, 212, 0.274);
+}
+#cont3 .cont3in .txt{
+  width: 20%; margin: 0 auto;
+  padding: 6.5% 0 5% 0;
+  /* position: absolute;
+  top: 12%; left: 50%;
+  transform: translateX(-50%); */
+}
+#cont3 .cont3in .txt h1{
+  /* background-color: rgba(0,0,0,0.5); */
+  font-size: 0.8vw;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 2%;
+}
+#cont3 .cont3in .txt h1 span{font-size: 2vw; font-weight: bold;}
+
+/* cont3in - contents 영역 */
+/* cont3in - contents - news */
+#cont3 .cont3in .contents {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#cont3 .cont3in .contents .news {
+  width: 46%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#cont3 .cont3in .contents .news h1 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+}
+#cont3 .cont3in .contents .news .news_box {
+  width: 95%; height: 30vh;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.671);
+}
+#cont3 .cont3in .contents .news .news_box ul {}
+#cont3 .cont3in .contents .news .news_box ul li a {
+  display: flex;
+  justify-content: space-between;
+}
+#cont3 .cont3in .contents .news .news_box ul li {
+  color: #fff;
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 2.9% 0;
+  margin: 0 3%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.671);
+  font-size: 0.8vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#cont3 .cont3in .contents .news .news_box ul li:last-child {
+  border-bottom: none;
+} 
+#cont3 .cont3in .contents .news .news_box ul li span {}
+#cont3 .cont3in .contents .news .news_box ul li:hover {font-weight: bold; text-decoration: underline;
+  
+}
+
+
+
+
+/* cont3in - contents - youtube */
+#cont3 .cont3in .contents .youtube {
+  width: 46%;
+  background-color: rgba(127, 255, 212, 0.562);
+}
+#cont3 .cont3in .contents .youtube h1 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+}
+#cont3 .cont3in .contents .youtube .video_area {
+  width: 85%;
+  margin: 0 auto;
+}
+#cont3 .cont3in .contents .youtube .video_area iframe {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 3%;
+}
+/* cont3in - icons */
+#cont3 .cont3in .icons {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 이미지 수정 */
+#cont3  .cont3in .icons p {
+  width: 5%; height: 5vh; 
+  background-color: rgba(0, 0, 255, 0.493);
+  overflow: hidden;
+  position: relative;
+  transition: all .3s;
+}
+#cont3  .cont3in .icons p img {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+}
+#cont3  .cont3in .icons p:hover {
+  transform: scale(1.1);
+}
+
+
+/* cont3 - footer영역 */
+#cont3 .footer {
+  width: 100%; height: 15%;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: rgb(173, 173, 173);
+  font-size: 0.7vw;
+  position: absolute;
+  bottom: 0;
+}
+#cont3 .footer .footerin{
+  width: 80%;
+  margin: 0% auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5%;
+}
+#cont3 .footer .footerin h3 {}
+#cont3 .footer .footerin h3 img {}
+#cont3 .footer .footerin .footer_info {
+  width: 60%;
+  background-color: rgba(137, 43, 226, 0.247);
+}
+#cont3 .footer .footerin .footer_info p {}
+#cont3 .footer .footerin .footer_info p span {}
+#cont3 .footer .footerin .footer_right {}
+#cont3 .footer .footerin .footer_right .info {
+  display: flex;
+}
+#cont3 .footer .footerin .footer_right .info p {}
+#cont3 .footer .footerin .footer_right .info p a:hover {font-weight: bold;color: #fff;}
+#cont3 .footer .footerin .footer_right .info p:first-child::after {
+  content: '|';
+  margin: 0 5px;
+}
+#cont3 .footer .footerin .footer_right .logo_mini {
+  display: flex;
+  justify-content: space-between;
+}
+#cont3 .footer .footerin .footer_right .logo_mini p {}
+#cont3 .footer .footerin .footer_right .logo_mini p img {}

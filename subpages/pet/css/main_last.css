@@ -1,0 +1,1502 @@
+#wrap{width: 100%;}
+#header{
+    width: 100%; height: 133px;
+    background: url(../img/bg_header.png) repeat-X;
+    position: relative;
+    z-index: 100;
+}
+#header #headerin{
+    width: 1200px; 
+    margin: 0 auto;
+    position: relative;
+    
+}
+#header #headerin .logo{
+    padding-top: 9px;
+    text-align: center;
+}
+#header #headerin .logo_1{display:none;}
+#header #headerin .util{
+    position: absolute;
+    right: 0; top: 27px;
+}
+#header #headerin .util li{
+    width: 28px; height: 27px;
+    float: left;
+    margin-right:25px;
+}
+#header #headerin .util li a{
+    display: block;
+    width: 28px; height: 27px;
+    font-size: 0;
+}
+#header #headerin .util li:nth-child(1){
+    background: url(../img/util.png) no-repeat;
+}
+#header #headerin .util li:nth-child(2){
+    background: url(../img/util.png) no-repeat 0 -39px;
+}
+#header #headerin .util li:nth-child(3){
+    background: url(../img/util.png) no-repeat 0 -72px;
+    margin-right: 0;
+}
+#header #headerin .btnMenu{display: none;}
+#header #headerin .btnMenu a{
+    background: url(../img/menu_icons.png) no-repeat;
+    display: block;
+    font-size: 0;
+    width: 27px; height: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 오픈엠 일단 포기...ㅠ */
+
+    .left{
+        display:block;
+        position:relative;
+        width:100%;
+    }
+    .left .closeM a{
+        display: none;
+        width: 27px; height: 27px;
+        font-size: 0;
+    }
+    .gnb{
+        width: 1000px;
+        /*margin: 0 auto;*/
+        position:absolute;
+        top:-40px;
+        left:50%; transform:translateX(-50%);
+        z-index:100;
+    }/*더하고 마진값 더해서 마진영오토!!포지션으로잡지말고!! 엥 근데 포지션으로 잡아줘도 위드를 크게 주니까 상관없눈다???*/
+    .gnb .depth1{
+        float:left;
+        width:144px;
+        position:relative;
+        margin-right: 80px;
+    }/*왜 왜..! 왜 나는 나는 왜 여기 새빛섬 처럼 gnb하버하면 뎁스나와서 뎁스 만질수 있게 안해주는데? 왜 왜왜 뎁스 못만지게 하냐고 ㅠㅠㅠㅠ*/
+    .gnb .depth1:hover h3{
+        background: url(../img/gnb_bg.png) repeat-x 0 bottom;
+    }
+    .gnb .depth1:nth-child(5) h3{width: 64px;}
+    
+    .gnb .depth1:nth-child(1){width: 139px;}
+    .gnb .depth1:nth-child(2){width: 138px;}
+    .gnb .depth1:nth-child(3){width: 138px;}
+    .gnb .depth1:nth-child(4){width: 144px;}
+    .gnb .depth1:nth-child(5){width: 100px; margin-right: 0;}
+
+    .gnb .depth2{
+        position:absolute;
+        top:50px; left:0;
+        width:100%; height:250px;
+        z-index:300;
+        display:none;
+    }
+    .gnb .depth2 li{
+        width:100%;
+    }
+    .gnb .depth2 li a{
+        padding:4px 10px;
+        font-size:13px;
+        color:#939393;
+        
+    }/*새빛섬처럼 어떻게 gnb에서 마우스를 옴겨도 뎁스가떠있게 하지?ㅠㅠㅜ*/
+    .gnb .depth2 li:hover a{color: #000; text-decoration: underline;}
+    .gnb:hover .depth2{display:block;}
+    .subBg{
+        width:100%;
+        height:182px;
+        background-color:#fff;
+        position:absolute;
+        top:-10px; left:0;
+        display:none;
+        border-bottom: 1px solid #aaa;
+    }/*구조상 z-index로 하면 글자가 나올수가 없음, 그림자때매 그런거면 차라리 헤더 그림자를 이미지로 하지말고 박스쉐도우로 준다음 하버하면 빠지게 하래. 아니면 포기해야한대 ㅠ*/
+    .gnb:hover ~ .subBg{display:block;}
+
+/* 오픈엠 일단 포기...ㅠ */
+
+
+
+
+
+
+
+
+
+#main_visual{
+    width: 100%; height: 846px;;
+    background: url(../img/main_bg_w_txt.png) no-repeat center 0 / cover;
+    margin: -10px auto 0 auto;
+}
+#main_visual .slider{}
+#main_visual .slider .simg{}
+#main_visual .slider .simg_t{}
+#main_visual .slider .simg_m{}
+
+
+
+
+
+#main_visual .slider .ani{
+    width: 516px; height: 495px;
+    margin: 90px auto;
+}
+#main_visual .slider .ani ul{}
+#main_visual .slider .ani ul li{}
+#main_visual .slider .ani ul:nth-child(1) li{
+    width: 172px; height: 134px;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+}
+#main_visual .slider .ani ul:nth-child(1) li .on{
+    position: absolute;
+    top: 0; left: 0;
+    
+}
+#main_visual .slider .ani ul:nth-child(2) li{
+    width: 172px; height: 134px;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+}
+#main_visual .slider .ani ul:nth-child(2) li .on{
+    position: absolute;
+    top: 0; left: 0;
+    
+}
+#main_visual .slider .ani ul:nth-child(3) li{
+    width: 172px; height: 134px;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+}
+#main_visual .slider .ani ul:nth-child(3) li .on{
+    position: absolute;
+    top: 0; left: 0;
+    
+}
+/*#main_visual .slider .ani ul.no{margin-top:0; }*/
+
+
+#main_visual .slider .ani ul li .on{
+    transform: rotate(-15deg);
+    transform-origin: center center;
+    display: none;
+    transition: all 0.5s;
+}
+#main_visual .slider .ani ul li:nth-child(2) .on{
+    transform: rotate(15deg);
+    transform-origin: center center;
+    display: none;
+    transition: all 0.5s;
+}/*왜 트랜지션이 안먹을까...?*/
+
+
+#main_visual .slider .ani ul li:hover .on{display: block;}
+#main_visual .slider .ani ul li:hover .off{display: none;}
+#main_visual .slider .ani ul li.ball{
+    animation-name: ball; /*암거나이름정하기*/
+    animation-duration:2.5s; /*한사이클얼마동안일어날거냐*/
+    animation-direction: nomal;/*종료되고나서 처음으로갈건지(nomal), 역방향으로 돌아갈건지(alternate) 지정*/
+    animation-iteration-count: infinite;/*반복재생*/
+    animation-timing-function:linear;/*재생되는 느낌 종류가많음*/
+    }
+    @keyframes ball{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }/*골뱅이가 붙은건 규칙이라는거?? 중간위치??중간상태를 지정해줄거래*/
+
+
+
+
+.side_img{width: 100vw;}
+.side_img .cat{
+    position: absolute;
+    left: 0;
+    top: 181px;
+}
+.side_img .cat img{}
+.side_img .cat .cat_on{
+    position: absolute;
+    top: 215px;
+    left: 272px;
+    display: none;
+}
+.side_img .cat:hover .cat_on{display: block;}
+.side_img .dog{
+    position: absolute;
+    right: 0;
+    top: 545px;
+}
+.side_img .dog img{}
+.side_img .dog .dog_on{
+    position: absolute;
+    top: 0px;
+    right: 215px;
+    display: none;
+}
+.side_img .dog:hover .dog_on{display: block;}
+.side_img .chatt{
+    position: fixed;
+    right: 0; 
+    bottom: 0px;
+    z-index: 150000;
+}/*몰라 이거 나중에하자 구조 바꿔야할듯*/
+
+
+
+
+
+
+
+
+
+
+
+#btn_bar{
+    width: 1200px; height: 430px;
+    margin: -88px auto;/*
+    background-color: fuchsia;*/
+}
+#btn_bar .btn_icon{
+    width: 1100px;
+    margin: 0 auto;
+}
+#btn_bar .btn_icon li{
+    width: 176px; height: 176px;
+    float: left;
+    margin-right: 55px;
+    position: relative;
+}
+#btn_bar .btn_icon li:last-child{margin-right: 0;}
+#btn_bar .btn_icon li a{}
+#btn_bar .btn_icon li .on{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#btn_bar .btn_icon li:hover .on{display: block; }
+
+
+#btn_bar .btn_icon li .txt{
+    display: block;
+    width: 176px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+#pet_list{
+    width:100%;
+}
+#pet_list .pet_list_in{
+    width: 1200px; height: auto;
+    margin: 0px auto;
+    position: relative;/*
+    background-color: aqua*/
+}
+#pet_list .pet_list_in .pet_tit{
+    background: url(../img/pet_list_tit.png)no-repeat;
+    width: 260px; height: 83px;
+    position: absolute;
+    z-index: 200;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#pet_list .pet_list_in .list_bg{
+    background: url(../img/pet_list_bg.png)no-repeat;
+    width: 1148px; height: 1879px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+
+#pet_list .pet_list_in .pet_img{
+    width: 1043px;
+    position: absolute;
+    top: 480px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    
+}
+#pet_list .pet_list_in .pet_img ul{
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-flow: row wrap;/*
+    position: absolute;
+    top: 580px;*/
+    
+}
+#pet_list .pet_list_in .pet_img .img li{
+    width: 245px; height: 245px;
+    margin-bottom: 175px;
+    margin-right: 2%
+}
+#pet_list .pet_list_in .pet_img .img li:nth-child(4){margin-right: 0;}
+#pet_list .pet_list_in .pet_img .img li:nth-child(8){margin-right: 0;}
+#pet_list .pet_list_in .pet_img .img li:nth-child(12){margin-right: 0;}
+#pet_list .pet_list_in .pet_img .img li .cover{
+    width: 245px; 
+    height: 245px;
+    border-radius: 15%; 
+    overflow: hidden; 
+}
+#pet_list .pet_list_in .pet_img .img li:hover .cover img{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+
+#pet_list .pet_list_in .pet_img li dt{
+    color: #bb1529;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+#pet_list .pet_list_in .pet_img li dd{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#pet_list .pet_list_in .btn{
+    width: 240px; height: 70px;
+    border: 5px solid #000;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    border-radius: 15px;
+}
+#pet_list .pet_list_in .btn a{
+    display: block;
+    width: 240px; height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 22px 0 0 0;
+    text-align: center;
+}
+#pet_list .pet_list_in .btn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+#pet_list .side_img{}
+#pet_list .side_img p:nth-child(1){
+    position: absolute;
+    top: 2024px; left: 0;
+    
+}
+#pet_list .side_img p:nth-child(1):hover{
+    transform: rotate(-15deg);
+    transform-origin: 50% 100%;
+}
+#pet_list .side_img p:nth-child(2){    
+    position: absolute;
+    top: 2459px; right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+    width: 1200px; height: 1090px;
+    margin: 0 auto;
+    position: relative;/*
+    background-color: lightsalmon*/
+}
+#contact .tit{
+    width: 171px; height: 91px;
+    margin: 0 auto;
+    padding: 121px 0 97px 0;
+}
+#contact .list{
+    position: absolute;
+    top: 309px;
+}
+#contact .list .name{}
+#contact .list .name p{}
+#contact .list .name input{
+    width: 580px; height: 40px;
+    font-size: 23px;
+    border: 0;
+    border-bottom: 4px solid #000;
+    margin-bottom: 107px;
+    margin-top: 15px;
+    outline: none;
+    background:transparent;
+        
+}
+
+#contact .list .phone{}
+#contact .list .phone p{}
+#contact .list .phone input{
+    width: 580px; height: 40px;
+    font-size: 23px;
+    border: 0;
+    border-bottom: 4px solid #000;
+    margin-bottom: 108px;
+    margin-top: 15px;
+    outline: none;
+    background:transparent;
+}
+
+#contact .list .contents{}
+#contact .list .contents p{}
+#contact .list .contents input{
+    width: 580px; height: 162px;
+    font-size: 23px;
+    border: 4px solid #000;
+    margin-top: 15px;
+    outline: none;
+    border-radius: 10px;
+    background:transparent;
+}/*여기 글자 어떻게 내리지?*/
+
+
+#contact .list .btn{
+    width: 1200px;
+    margin: 0 auto;
+}
+#contact .list .btn p{
+    width: 240px; height: 70px;
+    border: 4px solid #000;
+    position: absolute;
+    top: px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+#contact .list .btn p a{
+    display: block;
+    width: 240px; height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+#contact .list .btn:hover p{
+    background-color: #000;
+    color: #fff;
+}
+
+
+#contact .banner{
+    width: 558px; height:590px;
+    position: relative;
+    right: -642px;
+    top:0;
+}
+#contact .banner .bn_pc{}
+#contact .banner .bn_t{display: none;}
+
+#contact .banner .pager{
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#contact .banner .pager li{
+    width: 12px; height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+#contact .banner .pager li:last-child{margin-right: 0;}
+#contact .banner .pager li a{
+    display: block;
+    font-size: 0;
+}
+#contact .banner .pager li.on{
+    width: 27px; height: 12px;
+    background-color: #989898;
+    border-radius: 8px;
+}
+
+
+
+
+
+#footer{
+    width: 100%; height: 134px;
+    background-color: #3e3e3e;
+}
+#footer .footerin{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#footer .footerin .flogo{
+    padding-top: 28px;
+}
+#footer .footerin .flogo a{
+    width: 415px; height: 63px;
+    margin-right: 33px;
+}
+#footer .footerin .finfo{
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+#footer .footerin .finfo p{
+    color: #fff;
+    font-size: 14px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:1700px){
+    
+    .side_img .cat{
+        top: 250px;
+    }
+    .side_img .cat img:first-child{width: 220px;}
+    .side_img .cat .cat_on{
+        height: 80px;
+        left: 200px;
+        top: 150px;
+        display: none;
+    }
+    .side_img .dog img:first-child{width: 200px;}
+    .side_img .dog .dog_on{
+        height: 70px;
+        right: 150px;
+    }
+    
+    
+}
+
+
+@media all and (max-width:1484px){
+    
+    .side_img .cat{
+        top: 350px;
+    }
+    .side_img .cat img:first-child{width: 200px;}
+    .side_img .cat .cat_on{
+        height: 80px;
+        left: 180px;
+        top: 135px;
+        display: none;
+    }
+    .side_img .dog{
+        top: 200px;
+    }
+    .side_img .dog img:first-child{width: 180px;}
+    .side_img .dog .dog_on{
+        height: 70px;
+        right: 125px;
+        top: -8px;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:1184px){
+    #pet_list .pet_list_in .pet_img{
+        width: 870px;
+}
+    #pet_list .pet_list_in .list_bg{
+    background:url(../img/pet_list_bg_tablet.png) no-repeat;
+    background-size: 1000px auto;
+    width: 1000px; height: 2010px;
+    margin: 0 auto;
+    }
+    #pet_list .pet_list_in .pet_img ul{
+    display: flex;
+    flex-flow: row wrap;
+    /*position: absolute;
+    top: 580px;*/ 
+    }
+    
+    #pet_list .pet_list_in .pet_img .img li{
+    width: 270px; height: 270px;
+    margin-right:3%
+}
+    #pet_list .pet_list_in .pet_img .img li .cover{
+    width: 270px; 
+    height: 270px;
+}
+    #pet_list .pet_list_in .pet_img .img li .cover img{
+        width: 270px; height: 270px;
+    }
+    
+    
+    #pet_list .pet_list_in .pet_img .img li:nth-child(4){margin-right: 3%;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(8){margin-right: 3%;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(12){margin-right: 0;}
+    
+    #pet_list .pet_list_in .pet_img .img li:nth-child(3){margin-right: 0;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(6){margin-right: 0;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(9){margin-right: 0;}
+    
+    #pet_list .pet_list_in .pet_img .img li:nth-child(10){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(11){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(12){display: none;}
+    
+    
+    
+    #pet_list .side_img{}
+    #pet_list .side_img p:nth-child(1){
+        top: 2524px;left: -70px;
+
+    }
+    #pet_list .side_img p:nth-child(2){    
+        position: absolute;
+        top: 2700px; right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:768px){
+    #wrap{}
+    #header{
+        height: 75px;
+        background: url(../img/bg_header_t.png) repeat-X;
+    }
+    #header #headerin{
+        width: 768px;
+        margin: 0 auto;
+    }
+    #header #headerin .logo{display: none;}
+    #header #headerin .logo_1{
+        display: block;
+    }
+    #header #headerin .logo_1 .mark{
+        width: auto;
+        height: 40px;
+        margin-top: 13px;
+        margin-left: 26px;
+    }
+   /* #header #headerin .logo_1 a:nth-child(2){
+        display: block;
+        width: 214px;
+        height: 40px;
+    }*/
+    #header #headerin .logo_1 .logoT{
+        height: 40px;
+/*        width: 214px;
+        margin: 0 auto;*/
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 13px;
+    } 
+    
+    #header #headerin .util li:nth-child(1){display: none;}
+    #header #headerin .util li:nth-child(2){display: none;}
+    #header #headerin .util li:nth-child(3){
+        position: absolute;
+        right: 80px;
+        top: -10px;
+    }
+    #header #headerin .btnMenu{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 17px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .left{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 384px; height: 1000vh;
+        background-color: #fff;
+        z-index:1000;
+        display: none;
+    }
+    .left .closeM a{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 23px;
+        z-index: 800;
+        width: 27px; height: 27px;
+        font-size: 0;
+        background: url(../img/menu_icons.png) 0 -33px;
+    }/*닫는버튼 어떻게 나오게하지?:; - 이미지를 안넣어줘놓고 없다고 그런거였음 머썩 */
+    .gnb{
+        top: 81px;
+        left: 10%;
+        transform:none;
+    }/*1024d일때 사라진게 아니라,, 지앤비에 포지션값을 준걸기억하고 얘들 위치를 초기화를 시켜보라는데? 무슌,,,;; ㅠㅠ - 
+    스태틱하고도 안나왔던건(이건 상관없었음..;) 제트인댁스 때문이었음 gnb에 기본으로 100줘놨는데 left에 50을줘버리니 , 헤더에 또 100이 있어서 gnb가 묶여있는 left가 뒤로가면서 gnb도 뒤로갔던것ㅋㅋ*/
+    
+    .gnb .depth1{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .gnb .depth2{
+        position: static;
+        top: 43px;
+        height: 80px;
+    }
+    
+    .gnb .depth2 li{
+        margin-top: 5px;
+    }
+    /*.subBg{
+        display: block;
+        width: 1000vw; height: 1000vh;
+        background-color: rgba(0,0,0,0.5);
+    }*/
+    .gnb:hover ~ .subBg{display: none;}/*여기 뎁스2 하버되는거 일단 나중에 하자 넘 느렴..*/
+    .menu_cover{
+        width: 100vw;
+        height: 1000vh;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 900;
+        position: absolute;
+        top: -76px;
+        display: none;
+    }/*얘 왜 헤더를 못넘기지? -- 헤더 값만큼 밀려섴ㅋㅋㅋ... 
+    아니 이제는 뒷배경 보이게 키니까 왜 안에 내용들이 다 사라지지? 몰라 나중에,,ㅠ
+    이게 다 밀렸던거였음 1000vh로 줘놓니까 절대 보일수가 없는거,
+    포지션 앱솔루트를 해야 이미지가 붕뜨는거임! 그래서 */
+    
+    
+    
+    
+    
+    
+    
+    
+    #main_visual{
+        width: 100vw; height: 579px;
+        background: url(../img/main_visual_tablet.png) no-repeat center 0;/*
+        background-color: aquamarine;*/
+        margin-top: -41px;
+    }
+    #main_visual .slider{/*
+        width: 100vw; height: auto;
+        background: url(../img/main_bg.png) no-repeat center center/ 1000px auto;*/
+    }
+    #main_visual .slider .ani{
+        display: none;
+    }
+    
+    
+    
+    .side_img .cat{
+        top: 320px;
+    }
+    .side_img .cat img:first-child{width: 130px;}
+    .side_img .cat .cat_on{
+        height: 54px;
+        left: 120px;
+        top: 90px;
+        display: none;
+    }
+    .side_img .dog{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    #btn_bar{
+        width: 100vw; height: 250px;
+        margin-top: -50px;
+    }
+    #btn_bar .btn_icon{
+        width: 575px;
+    }
+    #btn_bar .btn_icon li{
+        width: 91px; height: 91px;
+        margin-right: 30px;
+    }
+    #btn_bar .btn_icon li img{
+        width: 91px;
+    }
+    
+    
+    #btn_bar .btn_icon li .txt{
+        font-size: 12px;
+        display: block;
+        width: 91px;
+        margin-top: 10px;
+    }
+    /*#btn_bar .txt li{
+        width: 91px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    #btn_bar .txt li a{
+        font-size: 12px;
+    }*/
+    
+    
+    
+    
+    
+    #pet_list{}
+    #pet_list .pet_list_in{
+        width: 100%;
+    }
+    #pet_list .pet_list_in .pet_tit{
+        width: 158px; height: 50px;
+        background-size: 158px auto;
+        top: 200px;
+    }
+    #pet_list .pet_list_in .list_bg{
+        background:url(../img/pet_list_bg_tablet.png) no-repeat;
+        background-size: 699px auto;
+        width: 699px; height: 1410px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    
+    
+    #pet_list .pet_list_in .pet_img{
+        width: 641px;
+        top: 300px;
+    }
+    #pet_list .pet_list_in .pet_img .img{}
+    #pet_list .pet_list_in .pet_img .img li{
+        width: 199px; height: 199px;
+        margin-bottom: 140px;
+    }
+    #pet_list .pet_list_in .pet_img .img li:nth-child(10){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(11){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(12){display: none;}
+    #pet_list .pet_list_in .pet_img .img li .cover{
+        width: 199px; height: 199px;
+    }
+    #pet_list .pet_list_in .pet_img ul li .cover img{
+        width: 199px; height: 199px;
+    }
+    
+    
+    
+    #pet_list .pet_list_in .pet_img li dt{
+        font-size: 2vw;
+    }
+    #pet_list .pet_list_in .pet_img li dd{
+        font-size: 1.6vw;
+    }
+    
+    
+    #pet_list .pet_list_in .btn{
+        width: 160px; height: 50px;
+        border: 4px solid #000;
+        bottom: 70px;
+    }
+    #pet_list .pet_list_in .btn a{
+        width: 160px; height: 50px;
+        font-size: 2.5vw;
+        padding: 14px 0 0 0;
+    }
+    #pet_list .side_img{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #contact{
+        width: 768px; height: auto;
+        margin: 0 auto;
+    }
+    #contact .tit{
+        width: 147px;
+    }
+    #contact .tit img{
+        width: 147px; height: auto;
+    }
+    #contact .list{
+        position: static;
+        width: 699px; height: 700px;
+        margin: 0 auto;
+    }
+    #contact .list .name{}
+    #contact .list .name p{}
+    #contact .list .name input{
+        width: 699px;
+    }
+    
+    #contact .list .phone{}
+    #contact .list .phone p{}
+    #contact .list .phone input{
+        width: 699px;
+    }
+    
+    #contact .list .contents{}
+    #contact .list .contents p{}
+    #contact .list .contents input{
+        width: 699px;
+    }
+    
+    #contact .list .btn{
+        width: 160px;
+        margin: 0 auto;
+    }
+    #contact .list .btn p{
+        width: 160px; height: 50px;
+        border: 4px solid #000;
+        bottom: 250px;
+    }/*좀 이상하다,, list에 잡아둔 영역 밖을 바텀으로 인식함;;뭐지*/
+    #contact .list .btn p a{
+        width: 160px; height: 50px;
+        font-size: 2.5vw;
+        padding: 15px 0 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    #contact .banner{
+        width: 768px; height: 222px;
+        right: 0;
+        top: 0;
+        margin-bottom: 40px;
+    }
+    #contact .banner .bn_pc{display: none;}
+    #contact .banner .bn_t{
+        display: block;
+        width: 768px; height: 222px;
+        
+        
+    }
+    #contact .banner .bn_t img{
+        width: 768px; height: auto;
+    }
+    #contact .banner .pager{
+        bottom: 12px;
+    }
+    #contact .banner .pager li{}
+    #contact .banner .pager li a{}
+    #contact .banner .pager li.on{}
+    
+    
+    
+    
+    
+    
+    #footer{
+        height: 185px;
+    }
+    #footer .footerin{}
+    #footer .footerin .flogo{
+        padding-left: 34px;
+    }
+    #footer .footerin .flogo img{
+        height: 41px;
+    }
+    #footer .footerin .flogo a{}
+    #footer .footerin .finfo{
+        position: static;
+        margin-left: 34px;
+        margin-top: 18px;
+    }
+    #footer .footerin .finfo p{}
+    
+    
+    .side_img .chatt{
+        bottom: 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+/*768끝*/
+
+/*@media all and (max-width:712px){}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:640px){
+    #wrap{}
+    #header{
+        height: 88px;
+        background: url(../img/bg_header_m.png) repeat-X;
+        background-size: auto 88px;
+    }
+    #header #headerin{
+        width: 640px;
+        margin: 0 auto;
+    }
+    #header #headerin .logo{
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 17px;
+    }
+    #header #headerin .logo img{
+        width: 300px;
+    }
+    
+    
+    #header #headerin .logo_1{display: none;}
+    #header #headerin .util li:nth-child(3){display: none;}
+    #header #headerin .btnMenu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 24px;
+    }
+    #header #headerin .btnMenu a{
+        width: 30px; height: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .left{width: 100vw;display: none;}
+    .left .closeM a{
+        width: 30px; height: 30px;
+        background: url(../img/menu_icons.png)no-repeat 0 -31px;
+        background-size: 27px auto;
+    }
+    .gnb{top: 150px;}
+    
+    .gnb .depth1{
+        margin-bottom: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    #main_visual{
+        width: 100vw; height: 850px;
+        background: url(../img/main_visual_mobile.png) no-repeat center 0;
+        background-size: auto 870px;
+        margin-top: -8px;
+    }
+    .side_img .cat{display: none;}
+    
+    
+    
+    /*이거만 넣으면 이거 밑으로 다 틀어짐*/
+/*    
+    }
+    .side_img .dog{
+        display: block;
+        top: 100px;
+    }
+    .side_img .dog img:first-child{width: 110px;}.side_img .dog .dog_on{
+        height: 35px;
+        right: 80px;
+        top: 3px;
+        display: block;
+        }*/
+    
+
+
+    
+    
+    
+    
+    
+    
+    #btn_bar{
+        width: 100vw; height: 250px;
+    }
+    #btn_bar .btn_icon{
+        width: 390px;
+    }
+    #btn_bar .btn_icon li{
+        width: 108px; height: 108px;
+        margin-right: 30px;
+        margin-top: 32px;
+    }
+    #btn_bar .btn_icon li:nth-child(1){margin-top: 0;}
+    #btn_bar .btn_icon li:nth-child(2){margin-top: 0;}
+    #btn_bar .btn_icon li:nth-child(3){margin-right: 0;margin-top: 0;}
+    #btn_bar .btn_icon li:nth-child(4){margin-left: 72px;}
+    #btn_bar .btn_icon li img{
+        width: 108px;
+    }
+    
+    
+
+
+
+    #btn_bar .btn_icon li .txt{
+        display: block;
+        font-size: 14px;
+        width: 108px;
+    }
+/*
+    #btn_bar .txt li{
+        width: 106px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 112px;
+    }
+#btn_bar .txt li:nth-child(3){margin-right: 0;}
+#btn_bar .txt li:nth-child(4){margin-left: 72px; margin-bottom: 0;}
+#btn_bar .txt li:nth-child(5){margin-bottom: 0;}
+    #btn_bar .txt li a{
+        font-size: 14px;;
+    }
+    */
+    
+    
+    
+    
+    #pet_list{}
+    #pet_list .pet_list_in{
+        width: 100%;
+        position: relative;
+        top: 160px;
+    }
+    #pet_list .pet_list_in .pet_tit{
+        width: 187px; height: 60px;
+        background-size: 187px auto;
+        top: 165px;
+    }
+    #pet_list .pet_list_in .list_bg{
+        background:url(../img/pet_list_bg_mobile.png) no-repeat;
+        width: 610px; height: 1438px;
+        background-size: 610px 1438px;
+    }
+    
+    
+    
+    
+    
+    
+    #pet_list .pet_list_in .pet_img{
+        width: 486px;
+        top: 260px;
+    }
+    #pet_list .pet_list_in .pet_img .img{}
+    #pet_list .pet_list_in .pet_img .img li{
+        width: 223px; height: 223px;
+        margin-bottom: 127px;
+    }
+    #pet_list .pet_list_in .pet_img .img li:nth-child(7){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(8){display: none;}
+    #pet_list .pet_list_in .pet_img .img li:nth-child(9){display: none;}
+    #pet_list .pet_list_in .pet_img .img li .cover{
+        width: 223px; height: 223px;
+    }
+    #pet_list .pet_list_in .pet_img ul li .cover img{
+        width: 223px; height: 223px;
+    }
+    
+    
+    
+    #pet_list .pet_list_in .pet_img li dt{
+        font-size: 2.7vw;
+    }
+    #pet_list .pet_list_in .pet_img li dd{
+        font-size: 2.15vw;
+    }
+    
+    
+    
+    #pet_list .pet_list_in .btn a{
+        font-size: 3vw;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #contact{
+        width: 610px; 
+        margin-top: 100px;
+    }
+    #contact .tit{
+        width: 120px;
+        padding: 121px 0 30px 0;
+    }
+    #contact .tit img{
+        width: 120px; height: auto;
+    }
+    #contact .list{
+        width: 610px; height: 700px;
+        margin: 0 auto;
+    }
+    #contact .list .name{}
+    #contact .list .name p{}
+    #contact .list .name input{
+        width: 610px;
+    }
+    
+    #contact .list .phone{}
+    #contact .list .phone p{}
+    #contact .list .phone input{
+        width: 610px;
+    }
+    
+    #contact .list .contents{}
+    #contact .list .contents p{}
+    #contact .list .contents input{
+        width: 610px;
+    }
+    
+    #contact .list .btn p{
+        bottom: 215px;
+    }/*좀 이상하다,, list에 잡아둔 영역 밖을 바텀으로 인식함;;뭐지*/
+    #contact .list .btn p a{
+        font-size: 3vw;
+    }
+    
+    
+    
+    
+    
+    
+    #contact .banner{
+        width: 640px; height: 185px;
+        right: 15px;
+        top: 2px;
+        margin-bottom: 0px;
+    }
+    #contact .banner .bn_t{
+        display: block;
+        width: 768px; height: 222px;
+        
+        
+    }
+    #contact .banner .bn_t img{
+        width: 640px; height: auto;
+    }
+    #contact .banner .pager{
+        bottom: 12px;
+    }
+    
+    
+    
+    
+    #footer{
+        height: 185px;
+        text-align: center;
+    }
+    #footer .footerin{
+        width: 640px;
+    }
+    #footer .footerin .flogo{
+        margin-left: 0;
+        
+    }
+    #footer .footerin .flogo img{
+        height: 50px;
+    }
+    #footer .footerin .finfo{
+        position: static;
+        margin-left: 34px;
+        margin-top: 18px;
+    }
+    #footer .footerin .finfo p{
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+

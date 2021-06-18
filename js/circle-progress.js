@@ -14,7 +14,7 @@
     //first.circle
     $('.first.circle').circleProgress({
       value: '0.' + skillLevel1,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
@@ -26,7 +26,7 @@
     //second.circle
     $('.second.circle').circleProgress({
       value: '0.' + skillLevel2,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
@@ -38,7 +38,7 @@
     //third.circle
     $('.third.circle').circleProgress({
       value: '0.' + skillLevel3,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
@@ -50,7 +50,7 @@
     //fourth.circle
     $('.fourth.circle').circleProgress({
       value: '0.' + skillLevel4,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
@@ -62,7 +62,7 @@
     //fifth.circle
     $('.fifth.circle').circleProgress({
       value: '0.' + skillLevel5,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
@@ -74,7 +74,7 @@
     //sixth.circle
     $('.sixth.circle').circleProgress({
       value: '0.' + skillLevel6,
-      size: 80,
+      size: 70,
       emptyFill: "#f2f2f2",
       fill: {
         color: "#000"
