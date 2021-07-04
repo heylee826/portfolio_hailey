@@ -63,5 +63,3 @@ new Swiper('.project-web .swiper-container', {
   }
 });
 
-
-

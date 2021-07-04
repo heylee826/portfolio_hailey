@@ -453,6 +453,7 @@ vh나 vw를 넣으면 커질수록 커지고, 작을수록 작아짐!
     line-height: 2;
 }
 .swiper-slide .sd .btn_txt .txt p {font-size: 0.9vw; text-align: center;}
+.swiper-slide .sd .btn_txt .txt p span {font-weight: bold; color: brown;}
 
 
 /* 스와이퍼 슬라이드 css */
